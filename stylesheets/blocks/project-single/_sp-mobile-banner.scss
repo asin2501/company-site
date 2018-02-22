@@ -1,0 +1,5 @@
+.sp-mobile-banner {
+    @include breakpoint(no-mobile) {
+        display: none;
+    }
+}

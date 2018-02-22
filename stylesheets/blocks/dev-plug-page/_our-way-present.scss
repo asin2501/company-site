@@ -1,0 +1,230 @@
+.our-way-present {
+    padding-top: 12vmax;
+    font-family: $bold;
+    font-size: 1.5vmax;
+    letter-spacing: -1px;
+
+    .our-way-present__text {
+        max-width: 55%;
+        color: $font-grey;
+
+        * {
+            line-height: 1.4;
+        }
+
+        .developer & {
+            color: $font-light-grey;
+        }
+    }
+
+    .developer & .our-way__number {
+        color: #fff;
+    }
+
+    .our-way-present__image-block {
+        position: relative;
+        width: 72vw;
+
+        picture {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .our-way-present__content {
+        margin-bottom: 30vmin;
+        margin-left: 18vw;
+    }
+
+    h4 {
+        margin-bottom: 10vmin;
+        font-family: $bold;
+        font-size: 2vmax;
+        color: $base-color;
+    }
+
+    .our-way__number {
+        position: absolute;
+        left: 10vmin;
+        z-index: 1;
+        font-size: 20vmin;
+        color: $dark-bg;
+        transform: translateY(-50%);
+    }
+
+    .our-way__title {
+        position: absolute;
+        top: 50%;
+        right: -60px;
+        z-index: 1;
+        width: 100%;
+        font-family: $bold;
+        font-size: 21vmin;
+        line-height: 0.85;
+        letter-spacing: 10px;
+        color: $base-color;
+        transform-origin: 50% 50%;
+        transform: translateX(50%) translateY(-50%) rotateZ(-90deg);
+    }
+
+    @media (max-width: 1500px) {
+        .our-way__title {
+            right: 0;
+            font-size: 15vmin;
+        }
+
+        h4 {
+            margin-bottom: 8vmin;
+        }
+    }
+
+    @include breakpoint(medium) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 250px;
+
+        & > * {
+            width: 100%;
+        }
+
+        .our-way-present__image-container {
+            width: 100%;
+        }
+
+        .our-way-present__content {
+            order: 2;
+        }
+
+        .our-way__title {
+            transform: none;
+        }
+
+        .our-way-present__image-block {
+            width: 100%;
+        }
+
+        .our-way__title {
+            top: -160px;
+            box-sizing: border-box;
+            padding-right: 20px;
+            padding-left: 220px;
+            font-size: 110px;
+            line-height: 1;
+            text-align: left;
+        }
+
+        .our-way__number {
+            top: -145px;
+            left: 60px;
+            font-size: 100px;
+            line-height: 1;
+            transform-origin: 50% 50%;
+            transform: rotateZ(-90deg) translateY(0);
+        }
+
+        .our-way-present__content {
+            margin-right: 80px;
+            margin-left: 80px;
+            font-size: 23px;
+            line-height: 2;
+            letter-spacing: 2px;
+        }
+
+        .our-way-present__text {
+            max-width: 100%;
+        }
+
+        .our-way-present__text * {
+            line-height: 2;
+        }
+
+        p + p {
+            margin-top: 30px;
+        }
+
+        h4 {
+            margin-top: 45px;
+            margin-bottom: 60px;
+            font-size: 40px;
+            text-transform: none;
+        }
+
+        .our-way-present__content {
+            margin-bottom: 0;
+            padding-bottom: 50px;
+        }
+
+        .our-way-present__text {
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 1px;
+        }
+    }
+
+    @include breakpoint(small) {
+        padding-top: 200px;
+
+        .our-way__title {
+            top: -130px;
+            padding-left: 180px;
+            font-size: 90px;
+        }
+
+        .our-way__number {
+            top: -120px;
+            font-size: 80px;
+        }
+
+        h4 {
+            margin-top: 30px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @include breakpoint(extra-small) {
+        .our-way__title {
+            font-size: 80px;
+        }
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+        padding-top: 100px;
+
+        .our-way__title {
+            top: -80px;
+            width: 100%;
+            padding-left: 130px;
+            font-size: 50px;
+        }
+        .our-way__number {
+            top: -75px;
+            left: 30px;
+            font-size: 40px;
+        }
+
+        .our-way-present__content {
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+    }
+
+    @include breakpoint(mobile-landscape) {
+        .our-way-present__text {
+            font-size: 14px;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        .our-way-present__content {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}

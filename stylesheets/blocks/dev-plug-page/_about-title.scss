@@ -1,0 +1,137 @@
+.about-title {
+    position: relative;
+    overflow: hidden;
+    height: 50vw;
+
+    .about-title__heading {
+        position: relative;
+        top: 7.5vw;
+        width: 50vw;
+        box-sizing: content-box;
+        padding-left: 12%;
+        font-size: 8vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $base-color;
+
+        .about-title__word-wrap {
+            position: relative;
+            font-family: $bold;
+            line-height: 0.9;
+
+            span {
+                display: block;
+                transition: .3s all;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .about-title__word-wrap {
+                overflow: hidden;
+
+                span {
+                    opacity: 0;
+                    animation-name: titleAnimate;
+                    animation-duration: .7s;
+                    animation-fill-mode: forwards;
+                }
+
+                &:nth-child(2) {
+                    span {
+                        animation-delay: .7s;
+                        animation-duration: .4s;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-title__descr {
+        position: relative;
+
+        .about-title__descr-part {
+            position: absolute;
+            width: 30vw;
+            font-size: 1.2vw;
+            line-height: 1.5;
+            color: #6d6963;
+        }
+
+        @media (min-width: 992px) {
+            top: 15vw;
+
+            .about-title__descr-part {
+                animation-name: titleDescr;
+                animation-duration: .4s;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+                transform: translateY(150%);
+
+                &:nth-child(1) {
+                    left: 18vw;
+                }
+
+                &:nth-child(2) {
+                    left: 55vw;
+                    animation-delay: 1.3s;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(small) {
+        height: auto;
+        padding-top: 85px;
+        padding-right: 5%;
+        padding-left: 5%;
+        overflow: visible;
+
+        .about-title__heading {
+            position: static;
+            width: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        .about-title__word-wrap {
+            overflow: visible;
+            margin: 5px 0;
+        }
+
+        .about-title__descr {
+            .about-title__descr-part {
+                position: static;
+                width: auto;
+                font-size: 16px;
+
+                + .about-title__descr-part {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes titleAnimate {
+    from {
+        transform: translateY(150%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes titleDescr {
+    from {
+        transform: translateY(150%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

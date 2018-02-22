@@ -1,0 +1,137 @@
+.nav {
+    width: 240px;
+    max-width: 270px;
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #a4a4a4;
+}
+
+.nav__link {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(#a4a4a4, 0.35);
+    transition: transform 300ms linear,
+    color 300ms linear;
+
+    &:hover {
+        color: #000;
+        transform: translateX(15px);
+    }
+}
+
+.nav__link-list {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    opacity: 0;
+    transition: opacity 400ms linear;
+
+    .sidebar-opened & {
+        opacity: 1;
+        transition-delay: 700ms;
+    }
+}
+
+.nav__item {
+    font-size: 13px;
+    opacity: 0;
+    transition: transform 400ms linear,
+    color 400ms linear,
+    opacity 400ms linear;
+    transform: translateX(-60%);
+
+    .sidebar-opened & {
+        opacity: 1;
+        transform: translateX(0);
+
+        @for $i from 0 through 20 {
+            &:nth-child(#{$i}) {
+                transition-delay: (100ms * $i);
+            }
+        }
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &.active {
+        color: #000;
+    }
+
+    .fa {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
+
+.nav__contacts-item {
+    position: relative;
+    padding-left: 18px;
+    font-size: 10px;
+
+    & + & {
+        margin-top: 10px;
+    }
+
+    .fa {
+        position: absolute;
+        top: -2px;
+        left: 0;
+        font-size: 15px;
+        color: #000;
+    }
+}
+
+.nav__scroll-wrapper {
+    overflow-y: auto;
+    max-height: calc(100vh - 90px - 156px);
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+@include breakpoint(medium) {
+    .nav__scroll-wrapper {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .nav__footer {
+        padding-left: 20px;
+    }
+
+    .nav__scroll-wrapper {
+        max-height: calc(100vh - 156px);
+    }
+}
+
+@include breakpoint(extra-small) {
+    .nav {
+        .nav__social {
+            display: none;
+        }
+    }
+
+    .nav__link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .nav__scroll-wrapper {
+        max-height: calc(100vh - 96px);
+    }
+}

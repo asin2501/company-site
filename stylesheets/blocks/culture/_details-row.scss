@@ -1,0 +1,108 @@
+.details-row {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+        margin-bottom: -40px;
+    }
+
+    .details-row__image {
+        min-width: 58%;
+        flex-shrink: 0;
+        padding-top: 500px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .details-row__text-column {
+        padding-left: 30px;
+        padding-bottom: 80px;
+    }
+
+    .details-row__text-content {
+        margin-top: 15px;
+        font-family: $catalog;
+        line-height: 1.2;
+    }
+
+    .details-row__text-title {
+        position: relative;
+        margin-left: 30px;
+        padding-top: 65px;
+        font-family: $uniBold;
+        font-size: 18px;
+        line-height: 26px;
+        color: inherit;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 7px;
+            left: 0;
+            width: 30px;
+            border-bottom: 1px solid #000;
+            line-height: 22px;
+            transform: translateX(-115%);
+        }
+    }
+
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+
+        .details-row__text-column {
+            padding-right: 30px;
+            padding-left: 0;
+            text-align: right;
+        }
+
+        .details-row__text-title {
+            margin-right: 30px;
+            margin-left: 0;
+
+            &::before {
+                right: 0;
+                left: auto;
+                transform: translateX(115%);
+            }
+        }
+
+        @include breakpoint(extra-small) {
+            .details-row__text-column {
+                margin-right: 0;
+                text-align: left;
+            }
+
+            .details-row__text-title {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @for $i from 1 through 20 {
+        &:nth-child(#{$i}) {
+            z-index: calc(20 - #{$i});
+        }
+    }
+
+    @include breakpoint(extra-small) {
+        display: block;
+        margin-bottom: 0;
+        text-align: left;
+
+        .details-row__text-column {
+            padding-left: 0;
+        }
+
+        .details-row__text-title {
+            margin-right: 0;
+            margin-left: 0;
+            padding-top: 20px;
+
+            &::before {
+                content: none;
+            }
+        }
+    }
+}

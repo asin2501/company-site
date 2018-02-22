@@ -1,0 +1,71 @@
+//@font-face {
+//    font-family: 'Catalog Bold';
+//    src: url('../fonts/Catalog-Bold.eot');
+//    src: url('../fonts/Catalog-Bold.eot?#iefix') format('embedded-opentype'),
+//    url('../fonts/Catalog-Bold.woff2') format('woff2'),
+//    url('../fonts/Catalog-Bold.woff') format('woff'),
+//    url('../fonts/Catalog-Bold.ttf') format('truetype'),
+//    url('../fonts/Catalog-Bold.svg#Catalog-Bold') format('svg');
+//    font-weight: bold;
+//    font-style: normal;
+//}
+
+@font-face {
+    font-family: 'Catalog';
+    src: url('../fonts/Catalog-Regular.eot');
+    src: url('../fonts/Catalog-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Catalog-Regular.woff2') format('woff2'),
+    url('../fonts/Catalog-Regular.woff') format('woff'),
+    url('../fonts/Catalog-Regular.ttf') format('truetype'),
+    url('../fonts/Catalog-Regular.svg#Catalog-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans Bold';
+    src: url('../fonts/Uni-Sans-Bold.eot');
+    src: url('../fonts/Uni-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Uni-Sans-Bold.woff2') format('woff2'),
+    url('../fonts/Uni-Sans-Bold.woff') format('woff'),
+    url('../fonts/Uni-Sans-Bold.ttf') format('truetype'),
+    url('../fonts/Uni-Sans-Bold.svg#Uni-Sans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans Semibold';
+    src: url('../fonts/Uni-Sans-SemiBold.eot');
+    src: url('../fonts/Uni-Sans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Uni-Sans-SemiBold.woff2') format('woff2'),
+    url('../fonts/Uni-Sans-SemiBold.woff') format('woff'),
+    url('../fonts/Uni-Sans-SemiBold.ttf') format('truetype'),
+    url('../fonts/Uni-Sans-SemiBold.svg#Uni-Sans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simplon BP Bold';
+    src: url('../fonts/SimplonBP-Bold.eot');
+    src: url('../fonts/SimplonBP-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SimplonBP-Bold.woff2') format('woff2'),
+    url('../fonts/SimplonBP-Bold.woff') format('woff'),
+    url('../fonts/SimplonBP-Bold.ttf') format('truetype'),
+    url('../fonts/SimplonBP-Bold.svg#SimplonBP-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std Roman';
+    src: url('../fonts/AvenirLTStd-Roman.eot');
+    src: url('../fonts/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+    url('../fonts/AvenirLTStd-Roman.woff') format('woff'),
+    url('../fonts/AvenirLTStd-Roman.ttf') format('truetype'),
+    url('../fonts/AvenirLTStd-Roman.svg#AvenirLTStd-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

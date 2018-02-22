@@ -1,0 +1,193 @@
+.award-wrapper {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0;
+        transition-duration: 0.2s;
+        transition-property: transform, opacity;
+    }
+
+    &:hover {
+        .award__button {
+            opacity: 1;
+            transition: opacity 0.2s ease-out 0.2s;
+        }
+
+        .award {
+            border: none;
+        }
+    }
+
+    /* Hover animations go here */
+    // award wrapper animation:
+    $duration: 0.1s;
+    $delay: 0.1s;
+
+    &.award-wrapper--top {
+        &::before {
+            top: -100%;
+            left: 0;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: translateY(100%);
+        }
+
+        &:hover .award__button {
+            &::before,
+            &::after {
+                width: 100%;
+                height: 100%;
+            }
+
+            &::before {
+                top: 0;
+                left: 0;
+                border-bottom-color: $dark-grey;
+                border-left-color: $dark-grey;
+                transition: border-color 0s ease-out $delay * 2,
+                height $duration ease-out $delay * 2,
+                width $duration ease-out $delay*3;
+            }
+
+            &::after {
+                right: 0;
+                bottom: 0;
+                border-top-color: $dark-grey;
+                border-right-color: $dark-grey;
+                transition: border-color 0s ease-out $delay*4,
+                height $duration ease-out $delay*4,
+                width $duration ease-out $delay*5;
+            }
+        }
+    }
+
+    &.award-wrapper--right {
+        &::before {
+            top: 0;
+            left: 100%;
+        }
+        &:hover::before {
+            opacity: 1;
+            transform: translateX(-100%);
+        }
+
+        &:hover .award__button {
+            &::before,
+            &::after {
+                width: 100%;
+                height: 100%;
+            }
+
+            &::before {
+                top: 0;
+                right: 0;
+                border-top-color: $dark-grey;
+                border-left-color: $dark-grey;
+                transition: border-color 0s ease-out $delay*2,
+                width $duration ease-out $delay*2,
+                height $duration ease-out $delay*3;
+            }
+
+            &::after {
+                bottom: 0;
+                left: 0;
+                border-right-color: $dark-grey;
+                border-bottom-color: $dark-grey;
+                transition: border-color 0s ease-out $delay*4,
+                width $duration ease-out $delay*4,
+                height $duration ease-out $delay*5;
+            }
+        }
+    }
+
+    &.award-wrapper--bottom {
+        &::before {
+            top: 100%;
+            left: 0;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: translateY(-100%);
+        }
+
+        &:hover .award__button {
+            &::before,
+            &::after {
+                width: 100%;
+                height: 100%;
+            }
+
+            &::before {
+                right: 0;
+                bottom: 0;
+                border-top-color: $dark-grey;
+                border-right-color: $dark-grey;
+                transition: border-color 0s ease-out $delay*2,
+                height $duration ease-out $delay*2,
+                width $duration ease-out $delay*3;
+            }
+
+            &::after {
+                top: 0;
+                left: 0;
+                border-bottom-color: $dark-grey;
+                border-left-color: $dark-grey;
+                transition: border-color 0s ease-out $delay*4,
+                height $duration ease-out $delay*4,
+                width $duration ease-out $delay*5;
+            }
+        }
+    }
+
+    &.award-wrapper--left {
+        &::before {
+            top: 0;
+            left: -100%;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: translateX(100%);
+        }
+
+        &:hover .award__button {
+            &::before,
+            &::after {
+                width: 100%;
+                height: 100%;
+            }
+
+            &::before {
+                top: 0;
+                left: 0;
+                border-top-color: $dark-grey;
+                border-right-color: $dark-grey;
+                transition: border-color 0s ease-out $delay*2,
+                width $duration ease-out $delay*2,
+                height $duration ease-out $delay*3;
+            }
+
+            &::after {
+                bottom: 0;
+                right: 0;
+                border-bottom-color: $dark-grey;
+                border-left-color: $dark-grey;
+                transition: border-color 0s ease-out $delay*4,
+                width $duration ease-out $delay*4,
+                height $duration ease-out $delay*5;
+            }
+        }
+    }
+}

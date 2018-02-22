@@ -1,0 +1,183 @@
+.faq-section {
+    position: relative;
+    font-size: 1.2vw;
+
+    .about-title {
+        height: auto;
+
+        .about-title__heading {
+            top: auto;
+            width: 52vw;
+            font-size: 5.5vw;
+        }
+
+        .about-title__word-wrap span {
+            animation-name: none;
+        }
+    }
+
+    .faq-section__list-container {
+        width: 75%;
+        margin-left: 19%;
+    }
+
+    .faq-section__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        list-style-type: none;
+        line-height: 1.3;
+    }
+
+    .faq-section__list-item {
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 45px 0;
+        transition: 1.5s all;
+        transition-delay: .3s;
+
+        + .faq-section__list-item {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 5;
+                width: 0;
+                height: 1px;
+                background-color: $base-color;
+                opacity: 0;
+                transition-duration: 1.3s;
+                transition-delay: .5s;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+            }
+        }
+
+        @media (min-width: 992px) {
+            overflow: hidden;
+
+            .faq-section__list-question,
+            .faq-section__list-answer {
+                transform: translateY(300%);
+            }
+
+            &.animate {
+                .faq-section__list-question {
+                    animation-name: slideUp;
+                    animation-fill-mode: forwards;
+                    animation-duration: .7s;
+                    animation-delay: .3s;
+                }
+
+                .faq-section__list-answer {
+                    animation-name: slideUp;
+                    animation-fill-mode: forwards;
+                    animation-duration: .7s;
+                    animation-delay: .5s;
+                }
+
+                + .faq-section__list-item {
+                    &::before {
+                        width: 100%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-section__list-question,
+    .faq-section__list-answer {
+        position: relative;
+        width: 50%;
+        padding-right: 2vw;
+        padding-left: 40px;
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+    .faq-section__list-question {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #6d6963;
+    }
+
+    .faq-section__list-answer {
+        color: #000;
+
+        a {
+            display: inline-block;
+            font-weight: bold;
+            color: $base-color;
+        }
+    }
+
+    &.animate {
+        .about-title {
+            .about-title__word-wrap span {
+                animation-name: titleAnimate;
+            }
+        }
+    }
+
+    @include breakpoint(small) {
+        padding: 0 5%;
+        font-size: 16px;
+
+        .about-title {
+            padding: 0;
+
+            .about-title__heading {
+                width: auto;
+            }
+        }
+
+        .faq-section__list-container {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .faq-section__list {
+            margin-top: 20px;
+            padding-left: 0;
+        }
+
+        .faq-section__list-item {
+            &:first-child {
+                padding-top: 0;
+            }
+
+            + .faq-section__list-item {
+                &::before {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    @include breakpoint(extra-small) {
+        .faq-section__list-item {
+            flex-wrap: wrap;
+        }
+
+        .faq-section__list-answer,
+        .faq-section__list-question {
+            width: 100%;
+        }
+
+        .faq-section__list-question {
+            margin-bottom: 10px;
+        }
+    }
+}

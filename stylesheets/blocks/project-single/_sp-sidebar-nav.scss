@@ -1,0 +1,53 @@
+.sp-sidebar-nav {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    z-index: 5;
+    transform: translateY(-50%);
+    transition: opacity 400ms 1100ms;
+
+    &.sp-sidebar-nav--hidden {
+        z-index: 0;
+        opacity: 0;
+        transition: opacity 400ms;
+    }
+
+    .fa {
+        font-size: 25px;
+    }
+
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+.sp-sidebar-nav__item + .sp-sidebar-nav__item {
+    position: relative;
+    margin-top: 8vh;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 50%;
+        bottom: 100%;
+        width: 2px;
+        height: calc(8vh - 10px);
+        margin-bottom: 5px;
+        margin-left: -1px;
+        background-position: 50% 50%;
+        background-image: url('/images/works-dots.png');
+    }
+}
+
+.sp-sidebar-nav__link {
+    opacity: 0.75;
+    transition: opacity 200ms;
+
+    &:hover {
+        opacity: 1;
+    }
+}

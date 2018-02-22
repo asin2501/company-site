@@ -1,0 +1,13 @@
+.project-single {
+    @include breakpoint(medium) {
+        padding-top: 92px;
+    }
+
+    @include breakpoint(small) {
+        padding-top: 56px;
+    }
+
+    @include breakpoint(extra-small) {
+        padding-top: 46px;
+    }
+}

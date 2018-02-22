@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <title>Project Single - UTD</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet"> -->
+    <link rel="stylesheet" href="libs/bootstrap-4/bootstrap-grid.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page culture-watch">
+
+<!-- need remove this page -->
+
+<main>
+    <div class="culture-watch__video-container video-container">
+        <a class="video-container__close-icon" href="/culture-index.html">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" fill="#fff">
+                <rect width="60" height="60" style="fill:white;"></rect>
+                <g class="arrow">
+                    <line x1="22" y1="22" x2="38" y2="38" stroke-width="2" style="stroke: #000000;"></line>
+                    <line x1="22" y1="38" x2="38" y2="22" stroke-width="2" style="stroke: #000000;"></line>
+                </g>
+            </svg>
+        </a>
+        <div id="video-player" class="video-container__video-player">
+            <!-- Video -->
+            <video class="video-container__video" id="video" preload="auto" width="100%" height="100%"
+                   poster="/images/culture-watch/video-poster.jpg" autoplay controls controlsList="nodownload">
+                <source src="/videos/culture-watch/culture-watch.mp4" type="video/mp4">
+                <!--<source src="" type="video/webm">-->
+            </video>
+        </div>
+    </div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer="defer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer="defer"></script>
+<script src="js/min/app.js" defer="defer"></script>
+</body>
+</html>

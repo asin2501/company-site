@@ -1,0 +1,44 @@
+.read-more {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-family: $uni;
+
+    .read-more__nav {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        width: 13px;
+        height: 14px;
+        margin-left: 4px;
+        border: 2px solid #000;
+        text-indent: -12px;
+
+        &::before, &::after {
+            content: "\f105 ";
+            position: absolute;
+            top: 50%;
+            font-family: $fa;
+            font-size: 10px;
+            color: #000;
+            transition-duration: .5s;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(1, 0, 0, 1);
+            transform: translateY(-50%);
+        }
+
+        &::before {
+            left: 3px;
+        }
+
+        &::after {
+            left: 15px;
+        }
+    }
+
+    &:hover {
+        .read-more__nav {
+            text-indent: 0;
+        }
+    }
+}

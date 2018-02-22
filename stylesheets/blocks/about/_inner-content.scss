@@ -1,0 +1,49 @@
+.inner-content {
+    .inner-content__module {
+        padding-top: 15px;
+        font-family: $catalog;
+
+        > img, picture {
+            display: inline-block;
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+
+        &.inner-content__module-fz-small {
+            font-size: 17px;
+        }
+    }
+
+    .inner-content__module-title {
+        margin-bottom: 20px;
+        color: inherit;
+        font-family: $uni;
+        font-size: 20px;
+
+        i {
+            margin-right: 5px;
+            font-size: 27px;
+        }
+    }
+
+    @include breakpoint(small) {
+        .inner-content__module {
+            .col-lg-4 + .col-lg-4 {
+                margin-top: 35px;
+            }
+
+            picture {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    @include breakpoint(extra-small) {
+        .inner-content__module {
+            .col-md-6 + .col-md-6 {
+                margin-top: 17px;
+            }
+        }
+    }
+}

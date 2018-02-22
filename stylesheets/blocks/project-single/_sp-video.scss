@@ -1,0 +1,12 @@
+.sp-video {
+    position: relative;
+}
+
+.sp-video__play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: -40px;
+}

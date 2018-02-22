@@ -1,0 +1,26 @@
+.award {
+    position: relative;
+    border-bottom: 2px solid $under-line-bg;
+    text-align: center;
+
+    @include breakpoint(small) {
+        border-bottom: none;
+
+        .button-wrapper {
+            display: none;
+        }
+    }
+
+    .award__image {
+        margin-bottom: 10px;
+    }
+
+    .award__count {
+        margin-bottom: 15px;
+        font-size: 28px;
+
+        &-times {
+            font-size: 14px;
+        }
+    }
+}

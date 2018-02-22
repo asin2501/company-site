@@ -1,0 +1,55 @@
+.arrow-btn {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #919191;
+    cursor: pointer;
+}
+
+.arrow-btn__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+}
+
+.arrow-btn__icon--second {
+    background-color: #202020;
+    color: rgba(#fff, 0.8);
+    transition: transform 300ms;
+}
+
+.arrow-btn--prev {
+    &:hover {
+        .arrow-btn__icon--second {
+            transform: translateX(-100%);
+        }
+    }
+}
+
+.arrow-btn--next {
+    &:hover {
+        .arrow-btn__icon--second {
+            transform: translateX(100%);
+        }
+    }
+}
+
+@include breakpoint(small-tablet-portrait) {
+    .arrow-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrow-btn__icon {
+        line-height: 40px;
+    }
+}

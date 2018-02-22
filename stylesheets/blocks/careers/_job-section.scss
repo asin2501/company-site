@@ -1,0 +1,26 @@
+.job-section {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: $catalog;
+
+    h4 {
+        font-family: $uni;
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: inherit;
+    }
+
+    ul {
+        padding-left: 20px;
+
+        li {
+            list-style-type: disc;
+        }
+
+        + p {
+            margin-top: 30px;
+        }
+    }
+}

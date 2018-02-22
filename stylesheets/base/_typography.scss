@@ -1,0 +1,50 @@
+//typography: base styles for fonts, p, a, standard h1, h2 ...
+
+body {
+    font-family: $font;
+    font-size: 18px;
+    color: $black;
+
+    @include breakpoint(medium) {
+        letter-spacing: normal;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+}
+
+p {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @include breakpoint(small) {
+        font-size: 46px;
+    }
+
+    @include breakpoint(extra-small) {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    font-size: 46px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: $base-color;
+}

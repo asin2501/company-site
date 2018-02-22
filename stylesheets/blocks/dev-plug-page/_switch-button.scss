@@ -1,0 +1,97 @@
+.switch-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    width: 130px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: width 300ms linear, transform 400ms linear;
+
+    &.switch-button--hide {
+        transform: translateX(100%);
+    }
+
+    &.switch-button--developer {
+        .switch-button__arrow {
+            right: 30px;
+            left: auto;
+        }
+
+        &.switch-button--hide {
+            transform: translateX(-100%);
+        }
+    }
+
+    &:hover {
+        .switch-button__arrow {
+            opacity: 1;
+        }
+
+        .switch-button__icon {
+            opacity: 1;
+        }
+    }
+
+    .switch-button__arrow {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        width: auto;
+        height: 14px;
+        margin-top: -7px;
+        opacity: 0;
+        transition: opacity 250ms linear 50ms;
+    }
+
+    .switch-button__icon {
+        position: absolute;
+        bottom: calc(50vh + 170px);
+        left: 50%;
+        width: 40px;
+        margin-left: -15px;
+        opacity: 0;
+        transition: opacity 250ms linear 50ms;
+    }
+
+    &:hover {
+        width: 170px;
+    }
+
+    &.switch-button--designer {
+        right: 0;
+        left: auto;
+        background-color: $black;
+    }
+
+    &.switch-button--developer {
+        background-color: $white;
+    }
+
+    .switch-button__inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        font-family: $bold;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $base-color;
+        transform: translateX(-50%) translateY(-50%) rotateZ(-90deg);
+    }
+
+    &.after-load {
+        transform: translateX(100%);
+    }
+
+    &.hide-overlap-page {
+        transition-delay: 2.5s;
+        transform: translateX(0);
+    }
+
+    @include breakpoint(medium) {
+        display: none;
+    }
+}

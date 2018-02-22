@@ -1,0 +1,76 @@
+@import "fonts";
+@import "variables";
+@import "keyframes";
+@import "typography";
+@import "utils";
+
+*:focus {
+    outline: none;
+}
+
+.yellow {
+    color: $base-color;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.project-single {
+    padding-top: 0;
+}
+
+html, body {
+    margin: 0;
+    font-family: $font;
+    line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+p + p {
+    margin-top: 17px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition-duration: .3s;
+}
+
+ul {
+    li {
+        line-height: 1.3;
+    }
+}
+
+button {
+    border: none;
+
+}
+
+textarea {
+    resize: none;
+}
+
+//base styles, and base classes like wrappers, containers or clearfix...

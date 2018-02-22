@@ -1,0 +1,27 @@
+.sp-storytelling {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sp-storytelling__text {
+    letter-spacing: 0;
+    column-count: 2;
+    column-gap: 40px;
+
+    @include breakpoint(medium) {
+        column-count: 1;
+    }
+}
+
+@include breakpoint(no-mobile) {
+    .sp-storytelling__text {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 400ms linear 600ms, transform 600ms linear 600ms;
+
+        .animate & {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

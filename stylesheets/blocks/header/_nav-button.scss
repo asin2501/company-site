@@ -1,0 +1,80 @@
+$lineAnimationDuration: 0.2s;
+.nav-button {
+    position: relative;
+    width: 20px;
+    height: 13px;
+    cursor: pointer;
+
+    .nav-button__line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid #000;
+        transform-origin: 0 1.5px;
+        transition-duration: 0.3s;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            border-top: 3px solid #ccc;
+        }
+
+        &:nth-child(1) {
+            top: 0;
+
+            &::before {
+                transition: width $lineAnimationDuration linear;
+            }
+        }
+
+        &:nth-child(2) {
+            top: 50%;
+            transform: translateY(-70%);
+
+            &::before {
+                transition: width $lineAnimationDuration linear $lineAnimationDuration;
+            }
+        }
+
+        &:nth-child(3) {
+            bottom: 0;
+
+            &::before {
+                transition: width $lineAnimationDuration linear $lineAnimationDuration*2;
+            }
+        }
+    }
+
+    &:hover {
+        .nav-button__line::before {
+            width: 100%;
+        }
+    }
+
+    &.opened {
+        .nav-button__line {
+            &:nth-child(1) {
+                transform: translateY(-2px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(2px) rotate(-45deg);
+            }
+        }
+    }
+
+    @include breakpoint(small) {
+        .nav-button__line {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

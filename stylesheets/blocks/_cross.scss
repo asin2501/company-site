@@ -1,0 +1,24 @@
+.cross {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    .cross__x, .cross__y {
+        position: absolute;
+        display: block;
+        top: 45%;
+        width: 100%;
+        height: 2px;
+        background-color: $base-color;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .cross__x {
+        transform: translateZ(0) rotate(45deg);
+    }
+
+    .cross__y {
+        transform: translateZ(0) rotate(-45deg);
+    }
+}

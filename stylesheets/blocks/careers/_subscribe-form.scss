@@ -1,0 +1,59 @@
+.subscribe-form {
+    padding: 5px;
+
+    * + form {
+        margin-top: 30px;
+    }
+
+    .subscribe-form__fields {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    .subscribe-form__field {
+        padding: 5px;
+
+        &--lg {
+            width: 100%;
+        }
+
+        &--md {
+            width: 50%;
+        }
+
+        &--sm {
+            width: 25%;
+        }
+    }
+
+    .btn-secondary {
+        + .btn-secondary {
+            margin-left: 5px;
+        }
+    }
+
+    &.animate {
+        animation-name: titleAnimate;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+    }
+
+    @include breakpoint(extra-small) {
+        text-align: center;
+
+        .subscribe-form__fields {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subscribe-form__field {
+            &--lg, &--md, &--sm {
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+            }
+        }
+    }
+}

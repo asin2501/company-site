@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <title>UTD</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet"> -->
+</head>
+<body class="homepage">
+
+<header class="header full-width" id="js-project-single-header">
+    <div class="header__inner-container">
+        <div class="header__nav-button nav-button nav-button--white" id="js-nav-button">
+            <div class="nav-button__line"></div>
+            <div class="nav-button__line"></div>
+            <div class="nav-button__line"></div>
+        </div>
+        <div class="header__vh"></div>
+        <div class="header__text-wrapper">
+            <div class="header__close-text">Close</div>
+            <div class="header__button-text">
+                <a href="/projects.html">About</a>
+            </div>
+            <a class="svg-logo svg-logo--white" href="index.html">
+                <svg width="78.711" height="29.727" version="1.1" viewBox="0 0 20.8256 7.8651601"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(-3.1877 -285.5)">
+                        <path d="m3.1877 285.5h1.049v4.6871q0 1.2402 0.44958 1.788 0.44958 0.5426 1.4573 0.5426 1.0025 0 1.4521-0.5426 0.44958-0.54777 0.44958-1.788v-4.6871h1.049v4.8162q0 1.509-0.74931 2.2789-0.74414 0.76998-2.2014 0.76998-1.4624 0-2.2118-0.76998-0.74414-0.76998-0.74414-2.2789z"/>
+                        <path d="m9.9883 285.5h6.5267v0.8785h-2.7389v6.8368h-1.049v-6.8368h-2.7389z"/>
+                        <path d="m18.572 286.36v5.9996h1.2609q1.5968 0 2.3358-0.72347 0.74414-0.72347 0.74414-2.2841 0-1.5503-0.74414-2.2686-0.73897-0.72347-2.3358-0.72347zm-1.0439-0.85783h2.1446q2.2428 0 3.2918 0.93535 1.049 0.93017 1.049 2.9146 0 1.9947-1.0542 2.93-1.0542 0.93535-3.2866 0.93535h-2.1446z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+<aside class="retractable-sidebar" id="js-retractable-sidebar">
+    <div class="nav">
+        <nav role="navigation" class="nav__scroll-wrapper">
+            <ul class="nav__link-list">
+                <li class="nav__item">
+                    <a class="nav__link" href="/index.html"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/our-works.html"><i class="fa fa-home"></i>Work</a>
+                </li>
+                <li class="nav__item active">
+                    <a class="nav__link" href="/about.html"><i class="fa fa-home"></i>About</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/culture-index.html"><i class="fa fa-home"></i>Culture</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="progress.html"><i class="fa fa-home"></i>Achievements</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/contact.html"><i class="fa fa-home"></i>Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="careers.html"><i class="fa fa-home"></i>Careers</a>
+                </li>
+            </ul>
+        </nav>
+        <dib class="nav__footer">
+            <ul class="nav-social-list nav__social">
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav__contacts">
+                <div class="nav__contacts-item">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>325 ADELAIDE ST. W TORONTO
+                </div>
+                <div class="nav__contacts-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>416.531.5263
+                </div>
+                <a href="#" class="nav__contacts-item">
+                    <i class="fa fa-book" aria-hidden="true"></i>ACCESSIBILITY
+                </a>
+            </div>
+        </dib>
+    </div>
+</aside>
+
+<main>
+    <div class="home full-height">
+        <!-- START home-first-screen  -->
+        <section class="home-first-screen full-height" id="main-screen">
+            <div class="home-first-screen--bg" id="particles-js"></div>
+            <div id="canvas-container" class="home-first-screen--logo">
+                <canvas id="logo-canvas"></canvas>
+                <canvas id="logo-canvas-hidden" style="display:none"></canvas><!-- Канвас из которого берутся данные картинки. Должен быть скрит -->
+                <!--Картинка для канваса. Должна быть скрыта-->
+                <img id="logo" src="images/logo.png" style="display:none" alt="">
+            </div>
+            <div class="bottom-scroll">
+                <div class="bottom-scroll__text">scroll</div>
+                <img src="svg/down-arrow.svg" alt="arrow">
+            </div>
+        </section>
+        <!-- END home-first-screen  -->
+        <div class="home__second-screen full-height" id="second-screen">
+            <!-- START home__halfscreen  -->
+            <section class="home__halfscreen vertical-bg-paralax" style="background-image: url('images/3.png'), url('images/4.png');     background-position: center 0, center 0;">
+                <div class="home__halfscreen-inner">
+                    <div class="home__halfscreen-content">
+                        <div class="home__icon">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 39 38.5" enable-background="new 0 0 39 38.5" xml:space="preserve">
+									<path fill="none" d="M36.4,18C35.8,10.6,30.3,4.4,23,2.9V0h-7v2.9C8.7,4.4,3.2,10.6,2.6,18H0v7h7v-7H4.6C5.2,11.7,9.8,6.4,16,4.9V7
+										h2.4c-0.9,6.3-7.3,9.6-7.3,9.6l-1,0.5l0.6,0.9c0,0.1,3.4,5.2,3.8,10.4h-4v6h4.4l2,4h5.2l2-4h4.4v-6h-4c0.4-5.3,3.8-10.4,3.8-10.4
+										l0.6-0.9l-1-0.5c-0.1,0-6.4-3.3-7.3-9.6H23V4.9c6.2,1.5,10.8,6.7,11.4,13.1H32v7h7v-7H36.4z M5,23H2v-3h3V23z M26.5,32.5h-3.6l-2,4
+										h-2.8l-2-4h-3.6v-2h14V32.5z M26.1,17.9c-1.1,1.8-3.3,6.1-3.6,10.6h-6.1c-0.3-4.5-2.5-8.8-3.6-10.6c1.4-0.8,3.8-2.7,5.6-5.5V21h2
+									v-8.6C22.3,15.2,24.8,17,26.1,17.9z M21,5h-3V2h3V5z M37,23h-3v-3h3V23z"></path>
+								</svg>
+                        </div>
+                        <span class="home__halfscreen-top-sub-title">I AM A</span>
+                        <h2 class="home__halfscreen-title">DESIGNER</h2>
+                        <p class="home__halfscreen-subtitle">I WANT TO IMAGINE THE IMPOSSIBLE.</p>
+                    </div>
+                    <div class="home__halfscreen-button-wrapper">
+                        <a href="/developer-switcher.html?switcherPos=0" class="animated-button">
+                            <div class="animated-button-inner ">
+                                <span>discover more</span>
+                                <span>discover more</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- END home__halfscreen  -->
+            <!-- START home__halfscreen  -->
+            <section class="home__halfscreen home__halfscreen--dark"
+                     style="background-image: url('images/1.png'), url('images/2.png');     background-position: center 0, center 0;">
+                <div class="home__halfscreen-inner ">
+                    <div class="home__halfscreen-content">
+                        <div class="home__icon">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="SVGInline-svg svgIcon-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 38 35.8" enable-background="new 0 0 38 35.8" xml:space="preserve">
+									<g>
+										<path fill="none" d="M7.6,9.1C7.2,8.7,6.5,8.8,6.2,9.3l-6,8c-0.3,0.4-0.3,0.8,0,1.2l6,8c0.2,0.3,0.5,0.4,0.8,0.4
+										c0.2,0,0.4-0.1,0.6-0.2c0.4-0.3,0.5-1,0.2-1.4l-5.5-7.4l5.5-7.4C8.1,10,8,9.4,7.6,9.1z"></path>
+										<path fill="none" d="M37.8,17.3l-6-8c-0.3-0.4-1-0.5-1.4-0.2c-0.4,0.3-0.5,1-0.2,1.4l5.5,7.4l-5.5,7.4c-0.3,0.4-0.2,1.1,0.2,1.4
+										c0.2,0.1,0.4,0.2,0.6,0.2c0.3,0,0.6-0.1,0.8-0.4l6-8C38.1,18.1,38.1,17.6,37.8,17.3z"></path>
+									<path fill="none" d="M24.7,0L9,20.9h6.8l-2.5,14.9L29,14.9h-6.8L24.7,0z M25,16.9L16.7,28l1.5-9.1H13l8.3-11.1l-1.5,9.1H25z"></path>
+								</g>
+							</svg>
+                        </div>
+                        <span class="home__halfscreen-top-sub-title">I AM A</span>
+                        <h2 class="home__halfscreen-title">DEVELOPER</h2>
+                        <p class="home__halfscreen-subtitle">I WANT TO BUILD THE IMPOSSIBLE.</p>
+                    </div>
+                    <div class="home__halfscreen-button-wrapper">
+                        <a href="/developer-switcher.html?switcherPos=1" class="animated-button">
+                            <div class="animated-button-inner ">
+                                <span>discover more</span>
+                                <span>discover more</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- END home__halfscreen  -->
+        </div>
+    </div>
+</main>
+<link rel="stylesheet" href="libs/bootstrap-4/bootstrap-grid.css">
+<link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer="defer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer="defer"></script>
+<script src="js/min/app.js" defer="defer"></script>
+</body>
+</html>

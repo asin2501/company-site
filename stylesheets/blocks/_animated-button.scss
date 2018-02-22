@@ -1,0 +1,88 @@
+.animated-button {
+    overflow: hidden;
+    display: inline-block;
+    height: 60px;
+    padding: 0;
+    border: 3px solid $base-color;
+    background-color: transparent;
+    font-family: $bold;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $base-color;
+    cursor: pointer;
+
+    &.animated-button--small {
+        height: 45px;
+        font-size: 15px;
+
+        .animated-button-inner {
+            span {
+                line-height: 39px;
+            }
+        }
+    }
+
+    &:hover {
+        .animated-button-inner {
+            transform: translateY(-50%);
+        }
+    }
+
+    .animated-button-inner {
+        display: inline-flex;
+        flex-direction: column;
+        transition: transform 300ms linear;
+
+        span {
+            padding: 0 45px;
+            line-height: 54px;
+        }
+
+        span + span {
+            background-color: $base-color;
+            color: $white;
+        }
+    }
+
+    &--white {
+        border: 3px solid #fff;
+        color: #fff;
+
+        .animated-button-inner {
+            span + span {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+
+    @include breakpoint(medium) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(small) {
+        height: 40px;
+        border: 2px solid $base-color;
+        font-size: 13px;
+
+        .animated-button-inner {
+            span {
+                padding: 0 25px;
+                line-height: 36px;
+            }
+        }
+    }
+
+    @include breakpoint(mobile-landscape) {
+        height: 36px;
+        font-size: 11px;
+
+        .animated-button-inner {
+            span {
+                padding: 0 20px;
+                line-height: 32px;
+            }
+        }
+    }
+}

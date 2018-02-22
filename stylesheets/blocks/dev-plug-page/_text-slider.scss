@@ -1,0 +1,105 @@
+.text-slider {
+    overflow: hidden;
+    width: 730px;
+    background-color: $dark-bg;
+    font-family: $bold;
+    line-height: 1.4;
+
+    p {
+        line-height: 1.4;
+    }
+
+    &__slide {
+        width: 100%;
+        padding-top: 40px;
+        padding-right: 80px;
+        padding-bottom: 100px;
+        padding-left: 80px;
+        opacity: 1;
+        transition: transform 500ms ease-out, opacity 500ms ease-out;
+        transform: translateX(0);
+
+        &--slided {
+            transform: translateX(-100%);
+        }
+
+        &--pre-slided {
+            transform: translateX(100%);
+        }
+
+        @for $i from 1 through 30 {
+            $width: percentage(1 / $i);
+
+            &:nth-child(#{$i}) {
+                z-index: (31 - $i);
+            }
+        }
+    }
+
+    &__slide + &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__line {
+        overflow: hidden;
+        display: flex;
+        padding-top: 40px;
+    }
+
+    &__pre-text {
+        max-width: 70px;
+        min-width: 70px;
+    }
+
+    &__line--a {
+        height: 280px;
+        min-height: 280px;
+        color: $icons-gray;
+    }
+
+    &__line--q {
+        height: 118px;
+        min-height: 118px;
+        color: $base-color;
+    }
+
+    @include breakpoint(large) {
+        width: 600px;
+
+        &__slide {
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 100px;
+            padding-left: 40px;
+        }
+
+        &__line {
+            padding-top: 20px;
+        }
+
+        &__line--a {
+            min-height: 200px;
+            height: 200px;
+        }
+
+        &__line--q {
+            min-height: 80px;
+            height: 80px;
+        }
+    }
+
+    @include breakpoint(medium) {
+        width: 100%;
+        background-color: rgba(#000, 0.5);
+
+        .text-slider__slide {
+            width: 100%;
+            padding-top: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+        }
+    }
+}

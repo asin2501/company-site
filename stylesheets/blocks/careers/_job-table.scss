@@ -1,0 +1,94 @@
+.job-table {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    a {
+        transition-duration: .3s;
+    }
+
+    .job-table__row {
+        display: flex;
+    }
+
+    .job-table__category {
+        width: 35%;
+        margin-right: 10px;
+        padding: 20px 0;
+        border-top: 1px solid #000;
+        font-weight: bold;
+    }
+
+    .job-table__title-list {
+        flex-grow: 1;
+    }
+
+    .job-table__title-list__item {
+        display: flex;
+    }
+
+    .job-table__title-list__link,
+    .job-table__title-list__continiue {
+        padding: 20px 0;
+    }
+
+    .job-table__title-list__link {
+        width: 75%;
+        border-top: 1px solid #ccc;
+
+        a {
+            color: #5e5e5e;
+
+            &:hover {
+                color: $base-color;
+            }
+        }
+    }
+
+    .job-table__title-list__continiue {
+        width: 25%;
+        margin-left: 10px;
+        border-top: 1px solid #ccc;
+
+        a {
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #252425;
+
+            &:hover {
+                color: #949494;
+            }
+        }
+    }
+
+    @include breakpoint(extra-small) {
+        margin-bottom: 50px;
+
+        .job-table__row {
+            flex-direction: column;
+
+            + .job-table__row {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+        font-size: 16px;
+
+        .job-table__title-list__link {
+            width: 90%;
+        }
+
+        .job-table__title-list__continiue {
+            width: 50px;
+            text-align: center;
+        }
+
+        .read-more {
+            .read-more__text {
+                display: none;
+            }
+        }
+    }
+}

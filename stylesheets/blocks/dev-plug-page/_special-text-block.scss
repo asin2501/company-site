@@ -1,0 +1,87 @@
+.special-text-block {
+    position: relative;
+    padding-top: 50px;
+
+    .special-text-block__title {
+        position: absolute;
+        top: 60px;
+        right: 100%;
+        width: 100%;
+        text-align: right;
+        font-family: $bold;
+        white-space: nowrap;
+        color: $base-color;
+        transform: translateY(-50%) rotateZ(-90deg);
+        transform-origin: 100% 50%;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 85px;
+        height: 7px;
+        background-color: $base-color;
+    }
+
+    @include breakpoint(large) {
+        padding-top: 30px;
+
+        .special-text-block__title {
+            top: 35px;
+            font-size: 20px;
+        }
+
+        &::before {
+            height: 5px;
+            width: 65px;
+        }
+    }
+
+    @include breakpoint(medium) {
+        position: static;
+        padding-top: 80px;
+
+        .special-text-block__title {
+            top: 0;
+            right: 80px;
+            left: 80px;
+            width: auto;
+            font-size: 120px;
+            white-space: initial;
+            transform: none;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+
+    @include breakpoint(small) {
+        .special-text-block__title {
+            font-size: 80px;
+        }
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+        .special-text-block__title {
+            right: 40px;
+            left: 40px;
+            font-size: 70px;
+        }
+    }
+
+    @include breakpoint(mobile-landscape) {
+        .special-text-block__title {
+            font-size: 50px;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        .special-text-block__title {
+            right: 20px;
+            left: 20px;
+            font-size: 40px;
+        }
+    }
+}

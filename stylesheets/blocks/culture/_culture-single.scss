@@ -1,0 +1,68 @@
+.culture-single {
+  .content {
+    position: relative;
+  }
+
+  h1 {
+    font-family: $uni;
+  }
+
+  .culture__subheading {
+    max-width: 600px;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: $catalog;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: none;
+
+    @include breakpoint(small) {
+      max-width: 400px;
+      margin-top: 50px;
+      font-size: 40px;
+    }
+
+    @include breakpoint(extra-small) {
+      max-width: 250px;
+      margin-top: 30px;
+      font-size: 25px;
+    }
+  }
+
+  .culture__details-container {
+    margin-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    @include breakpoint(large) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+
+  .culture__details-row {
+    @include breakpoint(no-mobile) {
+      opacity: 0;
+      transform: translateY(100px);
+
+      &.animate {
+        opacity: 1;
+        transform: translateY(0);
+        transition-duration: 1s;
+      }
+    }
+  }
+
+  .culture__scroll-up-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    width: 240px;
+    height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+}

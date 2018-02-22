@@ -1,0 +1,30 @@
+.svg-logo {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    animation-name: slideDown;
+    animation-fill-mode: forwards;
+    animation-duration: .7s;
+    animation-delay: .3s;
+
+    svg {
+        width: 100%;
+        fill: $base-color;
+
+        path {
+            stroke-width: .5px;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: dash 8s linear forwards;
+        }
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

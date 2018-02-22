@@ -1,0 +1,25 @@
+.button-wrapper {
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 2px solid #aaa;
+    transition-duration: 0.3s;
+    transition-property: all;
+
+    &:active {
+        background-color: #aaa;
+
+        .button {
+            color: #fff;
+        }
+    }
+}
+
+.button {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #aaa;
+    transition-duration: inherit;
+    transition-property: inherit;
+}

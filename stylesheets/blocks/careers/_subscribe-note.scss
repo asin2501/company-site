@@ -1,0 +1,32 @@
+.subscribe-note {
+    font-size: 35px;
+    text-align: center;
+
+    p + p {
+        margin-top: 0;
+    }
+
+    a {
+        border-bottom: 3px solid #202020;
+        color: #202020;
+
+        &:hover {
+            border-color: $base-color;
+            color: $base-color;
+        }
+    }
+
+    &.animate {
+        animation-name: titleAnimate;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+    }
+
+    @include breakpoint(small) {
+        font-size: 30px;
+    }
+
+    @include breakpoint(extra-small) {
+        font-size: 25px;
+    }
+}

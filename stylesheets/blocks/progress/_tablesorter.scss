@@ -1,0 +1,10 @@
+.tablesorter {
+    .fa {
+        float: right;
+    }
+
+    .tablesorter-headerAsc, .tablesorter-headerDesc {
+        position: relative;
+        border-bottom: 1px solid $dark-bg;
+    }
+}

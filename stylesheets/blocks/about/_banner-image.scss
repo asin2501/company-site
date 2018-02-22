@@ -1,0 +1,27 @@
+.banner-image {
+    overflow: hidden;
+    margin-bottom: 50px;
+    line-height: 0;
+
+    img {
+        transition-property: all;
+        transition-duration: 5s;
+        transition-timing-function: ease-out;
+    }
+
+    @media (min-width: 992px) {
+        &:hover {
+            img {
+                transform: scale(1.03) rotate(0.1deg);
+            }
+        }
+    }
+
+    @include breakpoint(small) {
+        margin-bottom: 25px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

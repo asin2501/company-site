@@ -1,0 +1,328 @@
+.person-story {
+    overflow: hidden;
+    margin-top: 300px;
+
+    &__portrait {
+        position: relative;
+        margin-left: 330px;
+    }
+
+    &__picture {
+        width: 100%;
+    }
+
+    .developer & &__quote-text {
+        color: $font-light-grey;
+    }
+
+    &__header {
+        position: absolute;
+        top: 60%;
+        left: -110px;
+        max-width: 800px;
+        padding-top: 40px;
+        padding-right: 100px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        background-color: rgba($base-color, 0.7);
+        text-align: left;
+        color: #fff;
+        transform: translateY(-50%);
+    }
+
+    &__header-title {
+        margin-bottom: 0;
+        font-family: $bold;
+        font-size: 170px;
+        font-weight: bold;
+        text-align: left;
+        color: #fff;
+    }
+
+    &__header-subtitle {
+        text-transform: uppercase;
+        font-family: $bold;
+        font-size: 27px;
+        color: #fff;
+
+        p {
+            line-height: 1.4;
+        }
+
+        p + p {
+            margin-top: 0;
+        }
+    }
+
+    &__author {
+        margin-top: 10px;
+        font-family: $bold;
+        color: $font-grey;
+
+        &::before {
+            content: '- ';
+        }
+    }
+
+    &__quote-text {
+        font-family: $bold;
+        font-size: 34px;
+
+        &::before, &::after {
+            content: '"';
+        }
+    }
+
+    &__quote {
+        margin: 0;
+        text-align: center;
+        color: $black;
+    }
+
+    &__story {
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 280px;
+        margin-left: 170px;
+    }
+
+    &__story-title {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        font-family: $bold;
+        color: $base-color;
+        white-space: nowrap;
+        transform: rotate(-90deg);
+        transform-origin: 100% 50%;
+    }
+
+    &__story-inner {
+        max-width: 820px;
+        margin: 0 auto;
+        padding-right: 100px;
+    }
+
+    &__story-text {
+        margin-top: 80px;
+    }
+
+    .person-story__picture {
+        display: block;
+    }
+
+    @include breakpoint(large) {
+        .person-story__header {
+            padding-bottom: 50px;
+        }
+
+        .person-story__header-title {
+            font-size: 120px;
+        }
+    }
+
+    @include breakpoint(medium) {
+        margin-top: 0;
+        padding-top: 200px;
+
+        .person-story__portrait {
+            margin-left: 0;
+        }
+
+        .person-story__header {
+            top: auto;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 100%;
+            transform: translateY(0);
+        }
+
+        .person-story__header-title {
+            display: none;
+        }
+
+        .person-story__header {
+            padding-top: 50px;
+            padding-right: 100px;
+            padding-bottom: 50px;
+            padding-left: 100px;
+
+            p + p {
+                margin-top: 20px;
+            }
+        }
+
+        .person-story__header-subtitle {
+            font-size: 30px;
+        }
+
+        .person-story__story {
+            margin-right: 80px;
+            margin-left: 80px;
+        }
+
+        .person-story__story-inner {
+            max-width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .person-story__story-title {
+            position: static;
+            margin-bottom: 40px;
+            transform: none;
+            text-align: center;
+        }
+
+        .person-story__author {
+            margin-top: 30px;
+            font-size: 30px;
+        }
+
+        .person-story__quote-text {
+            line-height: 2.5;
+        }
+
+        .person-story__story-text {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .person-story__story {
+            margin-bottom: 150px;
+        }
+    }
+
+    @include breakpoint(small) {
+        .person-story__header {
+            padding-top: 40px;
+            padding-right: 60px;
+            padding-bottom: 40px;
+            padding-left: 60px;
+        }
+
+        .person-story__header-subtitle {
+            font-size: 24px;
+        }
+
+        .person-story__story {
+            margin-top: 70px;
+        }
+
+        .person-story__quote-text {
+            font-size: 18px;
+        }
+
+        .person-story__story-title {
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+
+        .person-story__author {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        .person-story__story-text {
+            font-size: 17px;
+        }
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+        padding-top: 100px;
+
+        .person-story__story {
+            margin-top: 40px;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        .person-story__story-title {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .person-story__quote-text {
+            line-height: 1.6;
+        }
+
+        .person-story__author {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        .person-story__story-text {
+            margin-top: 30px;
+            letter-spacing: 0;
+        }
+
+        .person-story__story {
+            margin-bottom: 80px;
+        }
+
+        .person-story__header {
+            padding-top: 15px;
+            padding-right: 40px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+        }
+
+        .person-story__header-subtitle {
+            font-size: 15px;
+
+            p + p {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    @include breakpoint(mobile-landscape) {
+        padding-top: 50px;
+
+        .person-story__story {
+            margin-bottom: 50px;
+        }
+
+        .person-story__story-text {
+            font-size: 14px;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        .person-story__story {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+
+@include breakpoint(no-mobile) {
+    .person-story__portrait {
+        .person-story__picture {
+            opacity: 0;
+            transform: translateX(100%);
+            transition: transform 800ms linear, opacity 500ms linear;
+        }
+
+        .person-story__header {
+            opacity: 0;
+            transform: translateX(-100%) translateY(-50%);
+            transition: transform 600ms linear, opacity 350ms linear;
+        }
+
+        &.animate {
+            .person-story__picture {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            .person-story__header {
+                opacity: 1;
+                transform: translateX(0) translateY(-50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <title>Project Single - UTD</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet"> -->
+    <link rel="stylesheet" href="libs/bootstrap-4/bootstrap-grid.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page project-single">
+
+<header class="header full-width header--white header--transparent" id="js-project-single-header">
+    <div class="header__inner-container">
+        <div class="header__nav-button nav-button nav-button--white" id="js-nav-button">
+            <div class="nav-button__line"></div>
+            <div class="nav-button__line"></div>
+            <div class="nav-button__line"></div>
+        </div>
+        <div class="header__vh"></div>
+        <div class="header__text-wrapper">
+            <div class="header__close-text">Close</div>
+            <div class="header__button-text">
+                <a href="/our-works.html">
+                    <i class="fa fa-long-arrow-left"></i>
+                    Work
+                </a>
+                <span class="inner-holder">Songs of Gallipoli</span>
+            </div>
+            <a class="svg-logo svg-logo--white" href="index.html">
+                <svg width="78.711" height="29.727" version="1.1" viewBox="0 0 20.8256 7.8651601"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(-3.1877 -285.5)">
+                        <path d="m3.1877 285.5h1.049v4.6871q0 1.2402 0.44958 1.788 0.44958 0.5426 1.4573 0.5426 1.0025 0 1.4521-0.5426 0.44958-0.54777 0.44958-1.788v-4.6871h1.049v4.8162q0 1.509-0.74931 2.2789-0.74414 0.76998-2.2014 0.76998-1.4624 0-2.2118-0.76998-0.74414-0.76998-0.74414-2.2789z"/>
+                        <path d="m9.9883 285.5h6.5267v0.8785h-2.7389v6.8368h-1.049v-6.8368h-2.7389z"/>
+                        <path d="m18.572 286.36v5.9996h1.2609q1.5968 0 2.3358-0.72347 0.74414-0.72347 0.74414-2.2841 0-1.5503-0.74414-2.2686-0.73897-0.72347-2.3358-0.72347zm-1.0439-0.85783h2.1446q2.2428 0 3.2918 0.93535 1.049 0.93017 1.049 2.9146 0 1.9947-1.0542 2.93-1.0542 0.93535-3.2866 0.93535h-2.1446z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+<aside class="retractable-sidebar" id="js-retractable-sidebar">
+    <div class="nav">
+        <nav role="navigation" class="nav__scroll-wrapper">
+            <ul class="nav__link-list">
+                <li class="nav__item">
+                    <a class="nav__link" href="/index.html"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/our-works.html"><i class="fa fa-home"></i>Work</a>
+                </li>
+                <li class="nav__item active">
+                    <a class="nav__link" href="/about.html"><i class="fa fa-home"></i>About</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/culture-index.html"><i class="fa fa-home"></i>Culture</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="progress.html"><i class="fa fa-home"></i>Achievements</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/contact.html"><i class="fa fa-home"></i>Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="careers.html"><i class="fa fa-home"></i>Careers</a>
+                </li>
+            </ul>
+        </nav>
+        <dib class="nav__footer">
+            <ul class="nav-social-list nav__social">
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav__contacts">
+                <div class="nav__contacts-item">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>325 ADELAIDE ST. W TORONTO
+                </div>
+                <div class="nav__contacts-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>416.531.5263
+                </div>
+                <a href="#" class="nav__contacts-item">
+                    <i class="fa fa-book" aria-hidden="true"></i>ACCESSIBILITY
+                </a>
+            </div>
+        </dib>
+    </div>
+</aside>
+
+<main>
+    <a class="sp-button sp-button--left js-sp-button">
+        <i class="fa fa-angle-left sp-button__arrow" aria-hidden="true"></i>
+        <div class="sp-button__inner" role="button">
+            <div class="sp-button__image" style="background-image: url('./images/project-single/thumbnail1.jpg')"></div>
+            <div class="sp-button__text">Some long project name</div>
+        </div>
+    </a>
+    <a class="sp-button sp-button--right js-sp-button">
+        <i class="fa fa-angle-right sp-button__arrow" aria-hidden="true"></i>
+        <div class="sp-button__inner" role="button">
+            <div class="sp-button__image" style="background-image: url('./images/project-single/thumbnail2.jpg')"></div>
+            <div class="sp-button__text">Some project</div>
+        </div>
+    </a>
+    <aside class="sp-sidebar-nav sp-sidebar-nav--hidden" id="sp-sidebar-nav">
+        <ul class="sp-sidebar-nav__list">
+            <li class="sp-sidebar-nav__item">
+                <a href=".sp-storytelling" class="fa fa-book sp-sidebar-nav__link js-anchor"></a>
+            </li>
+            <li class="sp-sidebar-nav__item">
+                <a href=".sp-images" class="fa fa-pencil-square-o sp-sidebar-nav__link js-anchor"></a>
+            </li>
+            <li class="sp-sidebar-nav__item">
+                <a href=".sp-tech-info" class="fa fa-cog sp-sidebar-nav__link js-anchor"></a>
+            </li>
+            <li class="sp-sidebar-nav__item">
+                <a href=".sp-info" class="fa fa-info-circle sp-sidebar-nav__link js-anchor"></a>
+            </li>
+            <li class="sp-sidebar-nav__item">
+                <a href=".sp-related-product" class="fa fa-bolt sp-sidebar-nav__link js-anchor"></a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="content-wrap">
+        <!--<div class="js-page-container">-->
+        <div class="main">
+            <aside class="sp-mobile-buttons">
+                <a href="#" class="sp-mobile-buttons__button"><i class="fa fa-arrow-left" aria-hidden="true"></i><span>previos</span></a>
+                <a href="#" class="sp-mobile-buttons__button"><span>next</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </aside>
+            <div class="sp-top-video" id="video-wrapper">
+                <video autoplay loop id="sp-video">
+                    <source src="videos/project-single/Hunted_720.mp4" type="video/mp4">
+                    <source src="videos/project-single/Hunted_7201.ogv" type="video/ogg">
+                    <source src="videos/project-single/Hunted_720.webmhd.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="sp-mobile-banner" role="banner">
+                <img src="./images/project-single/placeholder.png" alt="">
+            </div>
+            <div class="page-container">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="sp-header sp-header__transformed" id="sp-header">
+                            <div class="scroll-btn" id="js-scroll-btn" role="button">
+                                <div class="scroll-btn__small scroll-btn__small--top">
+                                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="scroll-btn__big">
+                                    <i class="fa fa-arrow-up  scroll-btn__arrow scroll-btn__arrow--up" aria-hidden="true"></i>
+                                    <i class="fa fa-arrow-down scroll-btn__arrow scroll-btn__arrow--down" aria-hidden="true"></i>
+                                </div>
+                                <div class="scroll-btn__small scroll-btn__small--bottom">
+                                    <i class="fa fa-align-justify" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <header class="sp-header__inner">
+
+                                <h2 class="sp-header__title">HUNTED</h2>
+                                <h5 class="sp-header__subtitle">BYZANTIUM TESTS</h5>
+                            </header>
+                            <span class="sp-header__year"></span>
+                            <div class="row sp-header__text">
+                                <p class="sp-header__year">2012</p>
+                                <h4 class="col-12 col-sm-10">5 odd psychological tests + 1 ‘WTF’ moment = 1.4 million creeped out visitors.</h4>
+                            </div>
+                        </div>
+                        <div class="sp-video js-sp-video">
+                            <button class="sp-video__play-button play-button">
+                                <i class="fa fa-play play-button__icon fa-2x" aria-hidden="true"></i>
+                            </button>
+                            <video>
+                                <source src="videos/project-single/Hunted_720.mp4" type="video/mp4">
+                                <source src="videos/project-single/Hunted_7201.ogv" type="video/ogg">
+                                <source src="videos/project-single/Hunted_720.webmhd.webm" type="video/webm">
+                            </video>
+                        </div>
+                        <section class="sp-section sp-storytelling">
+                            <header class="sp-section__heading">
+                                <i class="fa fa-book sp-section__icon" aria-hidden="true"></i>
+                                <h4 class="sp-section__title">STORYTELLING</h4>
+                            </header>
+                            <div class="sp-storytelling__text">
+                                <p>People love a good conspiracy – especially when they’re a part of it. That was the approach we took in this Emmy nominated campaign, created with
+                                    Campfire NYC for Cinemax’s new show, Hunted.</p>
+                                <p>The show revolves around Sam Hunter, an agent of Byzantium Security, a private intelligence agency protecting the world’s elite. To develop
+                                    interest
+                                    in the show, we created a series of creepy psychological tests presented under the guise of a job application for Byzantium Security.</p>
+                                <p>The test advances through five phases, each more intriguing than the last. Phase one, the personality test, is designed to look deceptively
+                                    simple
+                                    and benign. Developed with the help of a cognitive psychologist, the tests increased in sophistication while perpetuating a feeling of unease
+                                    and
+                                    paranoia.</p>
+                                <p>This lingering sense of dread increased to a mind-blowing conclusion, thanks to clever use of an old mentalist’s trick and frankly, perfect
+                                    execution. Ten different APIs were used to create a disconcertingly surreal experience, including the nVisio facial recognition API, which was
+                                    used
+                                    to measure applicants’ emotional range. Social integration was taken to the next level using not only the Facebook API, but the newly minted
+                                    Login
+                                    via Reddit functionality, which was an incredible success from a traffic generation stand point. GetGlue badges were also included every step
+                                    along
+                                    the way.</p>
+                                <p>The Byzantium Tests were met with tremendous response. In just 12 weeks, the tests drew in over 1.4 million visits, boasting an average time on
+                                    the
+                                    site of 14 minutes. It’s a true viral success that reached the front page of Reddit not once, but twice!</p>
+                            </div>
+                        </section>
+                        <section class="sp-section sp-images">
+                            <header class="sp-section__heading">
+                                <i class="fa fa-pencil-square-o sp-section__icon" aria-hidden="true"></i>
+                                <h4 class="sp-section__title">DESIGN & CRAFT</h4>
+                            </header>
+                            <img src="images/project-single/hunted_design_craft_11.jpg" alt="">
+                            <img src="images/project-single/hunted_design_craft_23.jpg" alt="">
+                            <img src="images/project-single/hunted_design_craft_32.jpg" alt="">
+                            <img src="images/project-single/hunted_design_craft_4.jpg" alt="">
+                            <div class="sp-slider js-sp-slider-container">
+                                <div class="sp-slider__slider js-sp-slider">
+                                    <div class="sp-slider__slide">
+                                        <img src="images/project-single/01_hunted.jpg" alt="">
+                                    </div>
+                                    <div class="sp-slider__slide">
+                                        <img src="images/project-single/02_hunted.jpg" alt="">
+                                    </div>
+                                    <div class="sp-slider__slide">
+                                        <img src="images/project-single/03_hunted.jpg" alt="">
+                                    </div>
+                                    <div class="sp-slider__slide">
+                                        <img src="images/project-single/04_hunted.jpg" alt="">
+                                    </div>
+                                    <div class="sp-slider__slide">
+                                        <img src="images/project-single/05_hunted.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="sp-slider__footer">
+                                    <button class="sp-slider__button arrow-btn arrow-btn--prev js-prev">
+                                        <i class="fa fa-angle-left fa-2x arrow-btn__icon" aria-hidden="true"></i>
+                                        <i class="fa fa-angle-left fa-2x arrow-btn__icon arrow-btn__icon--second" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="sp-slider__button arrow-btn arrow-btn--next js-next">
+                                        <i class="fa fa-angle-right fa-2x arrow-btn__icon" aria-hidden="true"></i>
+                                        <i class="fa fa-angle-right fa-2x arrow-btn__icon arrow-btn__icon--second" aria-hidden="true"></i>
+                                    </button>
+                                    <!--<button class="sp-slider__button"></button>-->
+                                    <div class="sp-slider__slide-num">
+                                        <span class="sp-slider__current-num js-current-num">1</span>
+                                        <span class="sp-slider__separator">/</span>
+                                        <span class="sp-slider__total-num  js-total-num"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="sp-section sp-tech-info">
+                            <header class="sp-section__heading">
+                                <i class="fa fa-cog sp-section__icon" aria-hidden="true"></i>
+                                <h4 class="sp-section__title">TECHNICAL INFO</h4>
+                            </header>
+                            <div>
+                                <h3 class="sp-tech-info__title">A combination of HTML and Flash with a myriad of different APIs allowed us to create a mind reading (and blowing)
+                                    experience.</h3>
+                                <div class="sp-section__row row">
+                                    <div class="col-12 col-sm-6 col-lg-3 sp-section__col">
+                                        <h6 class="sp-section__subtitle">_ APIS</h6>
+                                        <p>We used ten different API’s to create an incredibly sophisticated experience. API nVisio facial recognition was used to gather emotional
+                                            data
+                                            and
+                                            Login via Reddit was used to generate heavy traffic.</p>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3  sp-section__col">
+                                        <h6 class="sp-section__subtitle">_ SERVER SETUP</h6>
+                                        <p>To accommodate heavy traffic, we use both a standard LAMP web server and a CDN (Content Delivery Network), allowing us to serve to an
+                                            eager
+                                            audience of thousands.</p>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3  sp-section__col">
+                                        <h6 class="sp-section__subtitle">_ FLASH AND HTML</h6>
+                                        <p>We combined HTML and Flash to create the site.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="sp-section sp-info">
+                            <header class="sp-section__heading">
+                                <i class="fa fa-info-circle sp-section__icon" aria-hidden="true"></i>
+                                <h4 class="sp-section__title">INFO</h4>
+                            </header>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-6 col-sm-4  sp-info__item">
+                                            <h4 class="sp-section__subtitle">_ Partners</h4>
+                                            <ul>
+                                                <li>Client <span>Cinemax</span></li>
+                                                <li>Agency <span>Campfire</span></li>
+                                                <li>Visual FX &amp; Post <span>Rafael Ludwig</span></li>
+                                                <li>Sound design <span>Drastic Music</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-6 col-sm-4  sp-info__item">
+                                            <h4 class="sp-section__subtitle">_ Services</h4>
+                                            <ul>
+                                                <li>Design <span></span></li>
+                                                <li>Development <span></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h4 class="sp-section__subtitle">_ Awards</h4>
+                                    <ul class="row sp-awards">
+                                        <li class="col-lg-6 col-sm-4 col-6 sp-awards__item">
+                                            <i class="sp-award__image-wrapper">
+                                                <img src="http://www.jam3.com/wp-content/uploads/2014/04/emmy.png" alt="">
+                                            </i>
+                                            <div class="sp-award__name">Emmy Nominated</div>
+                                        </li>
+                                        <li class="col-lg-6 col-sm-4 col-6 sp-awards__item">
+                                            <i class="sp-award__image-wrapper">
+                                                <img src="http://www.jam3.com/wp-content/uploads/2014/04/fwa1.png" alt="">
+                                            </i>
+                                            <div class="sp-award__name">Emmy Nominated</div>
+                                        </li>
+                                        <li class="col-lg-6 col-sm-4 col-6 sp-awards__item">
+                                            <i class="sp-award__image-wrapper">
+                                                <img src="http://www.jam3.com/wp-content/uploads/2014/04/commart.png" alt="">
+                                            </i>
+                                            <div class="sp-award__name">Emmy Nominated</div>
+                                        </li>
+                                        <li class="col-lg-6 col-sm-4 col-6 sp-awards__item">
+                                            <i class="sp-award__image-wrapper">
+                                                <img src="http://www.jam3.com/wp-content/uploads/2014/04/fitc.png" alt="">
+                                            </i>
+                                            <div class="sp-award__name">Emmy Nominated</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sp-info__button-row">
+                                <a href="#" class="btn-secondary">
+                               <span class="btn-secondary__content">
+                               <span class="btn-secondary__content-arrow-container">
+                                <i class="fa fa-long-arrow-right"></i>
+                                <i class="fa fa-long-arrow-right"></i>
+                               </span>
+                               <span class="btn-secondary__content-divider">|</span>
+                               <span class="btn-secondary__content-text">View site</span>
+                              </span>
+                                </a>
+                            </div>
+                        </section>
+                        <section class="sp-section sp-related-product">
+                            <header class="sp-section__heading">
+                                <i class="fa fa-bolt sp-section__icon" aria-hidden="true"></i>
+                                <h4 class="sp-section__title">RELATED PROJECTS</h4>
+                            </header>
+                            <ul class="row">
+                                <li class="col-sm-6 col-lg-3 sp-related-product__item">
+                                    <a href="#" class="related-project" style="background-image: url('./images/project-single/project-thumb.jpg')">
+                                        <div class="related-project__wrap">
+                                            <header class="related-project__inner">
+                                                <h4 class="related-project__title">Enjoy Your Privacy</h4>
+                                                <h5 class="related-project__sub-title">Norton</h5>
+                                            </header>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="col-sm-6 col-lg-3 sp-related-product__item">
+                                    <a href="#" class="related-project" style="background-image: url('./images/project-single/project-thumb2.jpg')">
+                                        <div class="related-project__wrap">
+                                            <header class="related-project__inner">
+                                                <h4 class="related-project__title">Enjoy Your Privacy</h4>
+                                                <h5 class="related-project__sub-title">Norton</h5>
+                                            </header>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="col-sm-6 col-lg-3 sp-related-product__item">
+                                    <a href="#" class="related-project" style="background-image: url('./images/project-single/project-thumb3.jpg')">
+                                        <div class="related-project__wrap">
+                                            <header class="related-project__inner">
+                                                <h4 class="related-project__title">Enjoy Your Privacy</h4>
+                                                <h5 class="related-project__sub-title">Norton</h5>
+                                            </header>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="col-sm-6 col-lg-3 sp-related-product__item">
+                                    <a href="#" class="related-project" style="background-image: url('./images/project-single/project-thumb4.jpg')">
+                                        <div class="related-project__wrap">
+                                            <header class="related-project__inner">
+                                                <h4 class="related-project__title">Enjoy Your Privacy</h4>
+                                                <h5 class="related-project__sub-title">Norton</h5>
+                                            </header>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+    </div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer="defer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer="defer"></script>
+<script src="js/min/app.js" defer="defer"></script>
+</body>
+</html>

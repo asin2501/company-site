@@ -1,0 +1,123 @@
+.switch-item {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 100vh;
+    padding-top: 90px;
+    font-size: 21px;
+    line-height: 1.8;
+    color: $font-grey;
+
+    &.developer {
+        color: $font-light-grey;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+
+    &.switch-item--developer {
+        padding-left: 130px;
+        background-color: $black;
+    }
+
+    .switch-item__logo {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 70px;
+        margin-left: -35px;
+
+        svg {
+            max-width: 100%;
+
+            * {
+                fill: $base-color;
+            }
+        }
+    }
+
+    &.switch-item--designer {
+        padding-right: 130px;
+        background-color: #fff;
+
+        .switch-item__header {
+            flex-direction: row-reverse;
+            padding-right: 200px;
+            padding-left: 60px;
+            background-color: #fff;
+        }
+    }
+
+    .switch-item__outer-container {
+        position: relative;
+        overflow: hidden;
+        height: calc(100vh - 90px);
+    }
+
+    .switch-item__scroll-container {
+        overflow-y: scroll;
+        height: 100%;
+        margin-right: -17px;
+    }
+
+    .switch-item__header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 26px;
+        padding-right: 60px;
+        padding-bottom: 20px;
+        padding-left: 200px;
+    }
+
+    .switch-item__header-icon {
+        width: 40px;
+
+        * {
+            fill: $base-color;
+        }
+    }
+
+    @include breakpoint(large) {
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: 1px;
+
+        p {
+            line-height: 1.8;
+        }
+    }
+
+    @include breakpoint(medium) {
+        width: 100%;
+
+        .switch-item__header {
+            display: none !important;
+        }
+
+        &.switch-item--developer {
+            padding-left: 0;
+        }
+
+        &.switch-item--designer {
+            padding-right: 0;
+        }
+
+        .switch-item__scroll-container {
+            margin-right: 0;
+        }
+    }
+
+    @include breakpoint(extra-small) {
+        padding-top: 50px;
+
+        .switch-item__outer-container {
+            height: calc(100vh - 50px);
+        }
+    }
+}

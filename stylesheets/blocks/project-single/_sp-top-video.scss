@@ -1,0 +1,25 @@
+.sp-top-video {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: calc(100vh - 200px);
+    transition: height 400ms linear 600ms, margin 400ms linear 600ms;
+
+    video {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+.sp-top-video--compressed {
+    height: 200px;
+    margin-right: 100px;
+    margin-left: 100px;
+}

@@ -1,0 +1,150 @@
+.full-height {
+    height: 100vh;
+}
+
+.page {
+    padding-top: 92px;
+
+    @include breakpoint(small) {
+        padding-top: 56px;
+    }
+    @include breakpoint(extra-small) {
+        padding-top: 46px;
+    }
+}
+
+.page-container {
+    position: relative;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: $light-bg;
+
+    @include breakpoint(medium) {
+        max-width: 1080px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.single-project-container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.content {
+    padding-top: 1px;
+    max-width: 1180px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
+
+    @include breakpoint(large) {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    @include breakpoint(medium) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    @include breakpoint(small) {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+        margin-right: 0;
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.content-big {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    @include breakpoint(small) {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    @include breakpoint(small-tablet-portrait) {
+        margin-right: 0;
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
+}
+
+.scroll-section {
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.styled-list {
+    ul {
+        padding-left: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        li {
+            position: relative;
+            line-height: 1.8;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: 0;
+                margin-top: -1px;
+                margin-left: -50px;
+                width: 20px;
+                height: 0;
+                border-bottom: 2px solid gray;
+            }
+        }
+
+        li + li {
+            margin-top: 30px;
+        }
+    }
+
+    @include breakpoint(large) {
+        ul {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            li {
+                line-height: 1.8;
+            }
+            li + li {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.content-wrap {
+    position: relative;
+    transition: transform 500ms linear;
+    transform: translateX(0px);
+
+    .sidebar-opened & {
+        transform: translateX(200px);
+    }
+
+    @include breakpoint(small) {
+        .sidebar-opened & {
+            transform: translateX(240px);
+        }
+    }
+}

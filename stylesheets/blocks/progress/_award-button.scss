@@ -1,0 +1,21 @@
+.award__button {
+    position: relative;
+    border: none;
+    transition: opacity 0.3s, color 0.3s;
+    opacity: 0;
+
+    &:hover {
+        color: $dark-grey;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        box-sizing: inherit;
+        border: 2px solid transparent;
+        transition-delay: inherit;
+    }
+}

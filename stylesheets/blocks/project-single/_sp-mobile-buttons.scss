@@ -1,0 +1,29 @@
+.sp-mobile-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+
+    @include breakpoint(no-mobile) {
+        display: none;
+    }
+
+    .fa {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    span {
+        display: block;
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+}
+
+.sp-mobile-buttons__button {
+    display: flex;
+    align-items: center;
+}

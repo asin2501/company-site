@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8"/>
+    <title>UTD</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libs/bootstrap-4/bootstrap-grid.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet"> -->
+</head>
+<body>
+
+<header class="header full-width" id="js-project-single-header">
+    <div class="header__inner-container">
+        <div class="header__nav-button nav-button nav-button--white" id="js-nav-button">
+            <div class="nav-button__line"></div>
+            <div class="nav-button__line"></div>
+            <div class="nav-button__line"></div>
+        </div>
+        <div class="header__vh"></div>
+        <div class="header__text-wrapper">
+            <div class="header__close-text">Close</div>
+            <div class="header__button-text">
+                <a href="/projects.html">About</a>
+            </div>
+            <a class="svg-logo svg-logo--white" href="index.html">
+                <svg width="78.711" height="29.727" version="1.1" viewBox="0 0 20.8256 7.8651601"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(-3.1877 -285.5)">
+                        <path d="m3.1877 285.5h1.049v4.6871q0 1.2402 0.44958 1.788 0.44958 0.5426 1.4573 0.5426 1.0025 0 1.4521-0.5426 0.44958-0.54777 0.44958-1.788v-4.6871h1.049v4.8162q0 1.509-0.74931 2.2789-0.74414 0.76998-2.2014 0.76998-1.4624 0-2.2118-0.76998-0.74414-0.76998-0.74414-2.2789z"/>
+                        <path d="m9.9883 285.5h6.5267v0.8785h-2.7389v6.8368h-1.049v-6.8368h-2.7389z"/>
+                        <path d="m18.572 286.36v5.9996h1.2609q1.5968 0 2.3358-0.72347 0.74414-0.72347 0.74414-2.2841 0-1.5503-0.74414-2.2686-0.73897-0.72347-2.3358-0.72347zm-1.0439-0.85783h2.1446q2.2428 0 3.2918 0.93535 1.049 0.93017 1.049 2.9146 0 1.9947-1.0542 2.93-1.0542 0.93535-3.2866 0.93535h-2.1446z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+<aside class="retractable-sidebar" id="js-retractable-sidebar">
+    <div class="nav">
+        <nav role="navigation" class="nav__scroll-wrapper">
+            <ul class="nav__link-list">
+                <li class="nav__item">
+                    <a class="nav__link" href="/index.html"><i class="fa fa-home"></i>Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/our-works.html"><i class="fa fa-home"></i>Work</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/about.html"><i class="fa fa-home"></i>About</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/culture-index.html"><i class="fa fa-home"></i>Culture</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="progress.html"><i class="fa fa-home"></i>Achievements</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/contact.html"><i class="fa fa-home"></i>Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="careers.html"><i class="fa fa-home"></i>Careers</a>
+                </li>
+                <li class="nav__item nav__item--developer">
+                    <a class="nav__link" href="careers.html"><i class="fa fa-home"></i>Developer</a>
+                </li>
+                <li class="nav__item nav__item--designer">
+                    <a class="nav__link " href="careers.html"><i class="fa fa-home"></i>Designer</a>
+                </li>
+            </ul>
+        </nav>
+        <dib class="nav__footer">
+            <ul class="nav-social-list nav__social">
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-social-list__item">
+                    <a class="nav-social-list__link">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav__contacts">
+                <div class="nav__contacts-item">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>325 ADELAIDE ST. W TORONTO
+                </div>
+                <div class="nav__contacts-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>416.531.5263
+                </div>
+                <a href="#" class="nav__contacts-item">
+                    <i class="fa fa-book" aria-hidden="true"></i>ACCESSIBILITY
+                </a>
+            </div>
+        </dib>
+    </div>
+</aside>
+
+<main class="switch" id="switch">
+    <div class="switch-preload" id="switch-preload">
+        <h1 class="switch-preload__logo">
+            <span class="switch-preload__letter" data-letter="u">u</span>
+            <span class="switch-preload__letter" data-letter="t">t</span>
+            <span class="switch-preload__letter" data-letter="d">d</span>
+        </h1>
+    </div>
+    <div class="switch__inner">
+        <div class="switch-item switch-item--designer designer">
+            <div class="scroll-bar js-scroll-bar" data-scroll-container=".designer .switch-item__scroll-container">
+                <ul class="scroll-bar__list">
+                    <li class="scroll-bar__item js-scroll-item" data-for="#scroll-section-1">
+                        <span class="scroll-bar__border"></span>
+                        <span class="scroll-bar__section-number">01</span>
+                        <span class="scroll-bar__title">WHAT TO expect</span>
+                    </li>
+                    <li class="scroll-bar__item js-scroll-item" data-for="#scroll-section-2">
+                        <span class="scroll-bar__border"></span>
+                        <span class="scroll-bar__section-number">02</span>
+                        <span class="scroll-bar__title">intern stories</span>
+                    </li>
+                    <li class="scroll-bar__item js-scroll-item" data-for="#scroll-section-3">
+                        <span class="scroll-bar__border"></span>
+                        <span class="scroll-bar__section-number">03</span>
+                        <span class="scroll-bar__title">apply</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="switch-item__outer-container">
+                <div class="switch-item__scroll-container" id="designer-scroll-container">
+                    <div class="switch-item__content">
+                        <div class="scroll-section" id="scroll-section-1">
+                            <section class="our-way-present our-way-step">
+                                <div class="our-way-present__content">
+                                    <h4>Design with intent</h4>
+                                    <div class="our-way-present__text">
+                                        <p>We’re passionate about our craft. That’s why this internship is a hands-on
+                                            exploration of creativity and design.</p>
+                                        <p>We believe in learning by doing. Our aim is to nurture and grow bright young minds
+                                            from the get-go, because that’s how our industry will thrive.</p>
+                                    </div>
+                                </div>
+                                <div class="our-way-present__image-block">
+                                    <span class="our-way__number">01</span>
+                                    <h2 class="our-way__title">WHAT TO EXPECT</h2>
+                                    <picture class="our-way-present__image-container">
+                                        <source srcset="images/developer_and_designer/meeteng.jpg"
+                                                media="(max-width: 600px)">
+                                        <img src="images/developer_and_designer/meeteng.jpg" alt="MDN">
+                                    </picture>
+                                </div>
+                            </section>
+                            <section class="our-way-present-second">
+                                <div class="our-way-present-second__picture-block">
+                                    <picture>
+                                        <source srcset="images/developer_and_designer/office.jpg" media="(min-width: 600px)">
+                                        <img src="images/developer_and_designer/office.jpg" alt="office">
+                                    </picture>
+                                </div>
+                                <div class="our-way-present-second__text-block special-text-block">
+                                    <h4 class="our-way-present-second__title  special-text-block__title">the role</h4>
+                                    <p>At Jam3, you’ll be exposed to every discipline in our creative process – UX, UI,
+                                        interactive
+                                        design, motion design, and copywriting. You’ll be part of a dynamic team that’s made up
+                                        of
+                                        likeminded, talented people. With them, you’ll work hard to create something that will -
+                                        without a doubt - stand out in your portfolio.</p>
+
+                                    <p>In addition to your team project, you’ll be lending a hand to the creative team.
+                                        Participating in brainstorm sessions, building winning pitches, preparing assets and
+                                        design
+                                        bibles for productions, you’ll be in the thick of it all.</p>
+
+                                    <p>We’ll assign you a mentor who will be there to support you, teach you, and answer all of
+                                        your
+                                        questions.</p>
+
+                                    <p>Oh, and you’ll probably make a friend or ten. NBD</p>
+                                </div>
+                            </section>
+                            <section class="our-way-present-second our-way-present-second--reverse styled-list">
+                                <div class="our-way-present-second__picture-block">
+                                    <picture>
+                                        <source srcset="images/developer_and_designer/requirementsDesktopDes.jpg" media="(min-width: 600px)">
+                                        <img src="images/developer_and_designer/requirementsDesktopDes.jpg" alt="office">
+                                    </picture>
+                                </div>
+                                <div class="our-way-present-second__text-block special-text-block">
+                                    <h4 class="our-way-present-second__title  special-text-block__title">REQUIRE<wbr>MENTS</h4>
+                                    <p>You own your shit. You’re a self-starter who shows passion and dedication to every task
+                                        given. "Make it happen and give all the fucks", is what we like to say–and the attitude
+                                        we need to see from you. Here is a straightforward breakdown:</p>
+                                    <ul class="our-way-present-second__mobile-hide">
+                                        <li>You play nice with other people.</li>
+                                        <li>You're an actively engaged person. That means you are present, motivated, and
+                                            social.
+                                        </li>
+                                        <li>You excel at photoshop. You can create initial design layouts with confidence and
+                                            know how to effectively communicate concepts to everyone on your team.
+                                        </li>
+                                        <li>You have a solid understanding of visual hierarchy and colour theory.</li>
+                                        <li>You will assist with miscellaneous front-end build production if needed (slicing, layout, etc.).</li>
+                                        <li>You have creative courage. This is a tough industry, only the brave and sturdy
+                                            remain. Be prepared to defend your decisions and take constructive criticism.
+                                        </li>
+                                    </ul>
+                                    <div class="simple-slider our-way-present-second__mobile-slider js-simple-slider">
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You play nice with other people.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You're an actively engaged person. That means you are present, motivated, and
+                                                social.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You excel at photoshop. You can create initial design layouts with confidence and
+                                                know how to effectively communicate concepts to everyone on your team.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You have a solid understanding of visual hierarchy and colour theory.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You will assist with miscellaneous front-end build production if needed (slicing, layout, etc.).
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You have creative courage. This is a tough industry, only the brave and sturdy
+                                                remain. Be prepared to defend your decisions and take constructive criticism.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p>To us, beauty without substance has no value. At Jam3, design thinking and execution are
+                                        equally important, so when we’re examining your portfolio we’ll be on the lookout for
+                                        not only the how but the why.</p>
+                                </div>
+                            </section>
+                            <section class="our-way-present-second">
+                                <div class="our-way-present-second__picture-block">
+                                    <picture>
+                                        <source srcset="images/developer_and_designer/dayInTheLifeDesktopDes.jpg" media="(min-width: 600px)">
+                                        <img src="images/developer_and_designer/dayInTheLifeDesktopDes.jpg" alt="office">
+                                    </picture>
+                                </div>
+                                <div class="our-way-present-second__text-block special-text-block">
+                                    <h4 class="our-way-present-second__title  special-text-block__title">A DAY IN THE LIFE</h4>
+                                    <h6>Here’s a little peek of how your day could play out:</h6>
+                                    <div class="our-way-present-second__schedule our-way-present-second__mobile-hide">
+                                        <ul>
+                                            <li><span class="yellow">9:30</span> - Coffee and talking about last night’s Netflix binge.</li>
+                                            <li><span class="yellow">10:00</span> - Scrum with the team.</li>
+                                            <li><span class="yellow">12:00</span> - Eating lunch with the team. Laughter and debates ensue.</li>
+                                            <li><span class="yellow">2:30</span> - One on one with your mentor. This is your chance to get and give honest feedback.</li>
+                                            <li><span class="yellow">3:30</span> - On Friday’s, we host Beer O’Clock. It’s an opportunity to learn something new from your peers about our industry.</li>
+                                            <li><span class="yellow">6:00</span> - Unless you’re on a crazy deadline, you’re done for the day! Woo hoo! How ‘bout a drink or dinner with your fellow Jamsters?
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="simple-slider our-way-present-second__mobile-slider js-simple-slider">
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">9:30</span>
+                                            <p class="simple-slider__text">
+                                                Coffee and talking about last night’s Netflix binge.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">10:00</span>
+                                            <p class="simple-slider__text">
+                                                Scrum with the team.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">12:00</span>
+                                            <p class="simple-slider__text">
+                                                Eating lunch with the team. Laughter and debates ensue.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">2:30</span>
+                                            <p class="simple-slider__text">
+                                                One on one with your mentor. This is your chance to get and give honest feedback.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">3:30</span>
+                                            <p class="simple-slider__text">
+                                                On Friday’s, we host Beer O’Clock. It’s an opportunity to learn something new from your peers about our industry.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">6:00</span>
+                                            <p class="simple-slider__text">
+                                                Unless you’re on a crazy deadline, you’re done for the day! Woo hoo! How ‘bout a drink or dinner with your fellow Jamsters?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="scroll-section" id="scroll-section-2">
+                            <section class="section-heading">
+                                <div class="section-heading__title-wrap">
+                                    <h2 class="section-heading__title">INTERN STORIES</h2>
+                                    <span class="section-heading__number">02</span>
+                                </div>
+                                <h4 class="section-heading__subtitle">WE GAVE THESE PEOPLE THE TOOLS AND THEY MADE SOMETHING GREAT. MEET SOME OF WE3’S ALUMNI.</h4>
+                            </section>
+                            <section class="person-story">
+                                <div class="person-story__portrait">
+                                    <img class="person-story__picture" src="images/developer_and_designer/sara.jpg" alt="some person">
+                                    <div class="person-story__header">
+                                        <h2 class="person-story__header-title">SARA</h2>
+                                        <div class="person-story__header-subtitle">
+                                            <p>summer 2016</p>
+                                            <p>york university</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="person-story__story">
+                                    <h4 class="person-story__story-title">FOOD FOR THOUGHT</h4>
+                                    <div class="person-story__story-inner">
+                                        <blockquote class="person-story__quote">
+                                            <div class="person-story__quote-text">IF YOU HEAR A VOICE WITHIN YOU SAY 'YOU CANNOT PAINT,' THEN BY ALL MEANS PAINT, AND THAT VOICE
+                                                WILL BE
+                                                SILENCED.
+                                            </div>
+                                            <footer class="person-story__author">VINCENT VAN GOGH</footer>
+                                        </blockquote>
+                                        <div class="person-story__story-text">
+                                            <p>I’ve always been fascinated with applying logic to art. When I was in high school I wanted to be an architect, but I found myself
+                                                more
+                                                attracted to 2D
+                                                design, especially applications and interactive websites. That’s when I knew I wanted to be a designer. I took the leap and enrolled
+                                                in the
+                                                York/Sheridan Design
+                                                program and I love it. I am going into my final year and am very excited to get into the industry.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="person-slider js-person-slider">
+                                <div class="person-slider__inner">
+                                    <div class="person-slider__images">
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide1.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide2.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide3.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide4.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide5.jpg');"></div>
+                                    </div>
+                                    <div class="person-slider__text-slider">
+                                        <h4 class="person-slider__text-slider-title">MY EXPERIENCE AT JAM3</h4>
+                                        <div class="person-slider__inner text-slider">
+                                            <div class="text-slider">
+                                                <div class="text-slider__slide js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">THREE IMPORTANT THINGS I LEARNED AT JAM3:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">
+                                                            <p>How to create user journeys and properly map out a user experience flow</p>
+                                                            <p>How to present an idea or piece of design efficiently and persuasively</p>
+                                                            <p>How to manifest my design inspirations into my own work</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY MOST MEMORABLE MOMENT WITH THE JAMFAM:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text"><p>My beer o’clock presentation at the end of my internship. It was a very rewarding
+                                                            experience to
+                                                            show the final product!</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">WHAT ARE YOU INTO, THAT NOBODY ELSE IS?</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">Unconventional editorial design.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY FAVOURITE TYPEFACE:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">
+                                                            Inkwell Sans from MXB
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY ADVICE TO FUTURE INTERNS:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">Trust your instincts and accept criticism with an open mind.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="person-slider__controls">
+                                            <div class="person-slider__numbers">
+                                                <span class="person-slider__num js-num">
+                                                    <span class="person-slider__num-item">1</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">2</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">3</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">4</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">5</span>
+                                                </span>
+                                                <span class="person-slider__delimiter">OF</span>
+                                                <span class="person-slider__max-num js-max-num">5</span>
+                                            </div>
+                                            <div class="person-slider__buttons">
+                                                <button class="person-slider__button person-slider__button--prev js-prev">
+                                                    <img class="person-slider__svg-arrow person-slider__svg-arrow--prev" src="svg/small-arrow-left.svg" alt="">
+                                                </button>
+                                                <button class="person-slider__button person-slider__button--next js-next">
+                                                    <img class="person-slider__svg-arrow person-slider__svg-arrow--next" src="svg/small-arrow-right.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="person-story">
+                                <div class="person-story__portrait">
+                                    <img class="person-story__picture" src="images/developer_and_designer/man.jpg" alt="some person">
+                                    <div class="person-story__header">
+                                        <h2 class="person-story__header-title">MAURI</h2>
+                                        <div class="person-story__header-subtitle">
+                                            <p>summer 2012</p>
+                                            <p>GEORGE BROWN COLLEGE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="person-story__story">
+                                    <h4 class="person-story__story-title">FOOD FOR THOUGHT</h4>
+                                    <div class="person-story__story-inner">
+                                        <blockquote class="person-story__quote">
+                                            <div class="person-story__quote-text">I’M TOO DRUNK TO TASTE THIS CHICKEN!
+                                            </div>
+                                            <footer class="person-story__author">COLONEL SANDERS</footer>
+                                        </blockquote>
+                                        <div class="person-story__story-text">
+                                            <p>As a child I was always drawing, I enjoyed creating things that would put a smile on other's faces. As I got older, my drawing got
+                                                better and I began to dream of becoming an animator for Disney. Fast forward many years, I was in my last year of highschool and
+                                                hadn’t really created anything in years. As I was contemplating what I wanted to do with my life, I asked myself “what would make me
+                                                happiest?” At that point I realized I need to create something. I settled on graphic design– because it was the closest thing that
+                                                brought me back to my child dream. Being a designer at Jam3 allows me to be creative and “childish” again, but with real purpose,
+                                                solving real problems–and that’s what drove me to pursue this career.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="person-slider js-person-slider">
+                                <div class="person-slider__inner">
+                                    <div class="person-slider__images">
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide21.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide22.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide23.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide24.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide25.jpg');"></div>
+                                    </div>
+                                    <div class="person-slider__text-slider">
+                                        <h4 class="person-slider__text-slider-title">MY EXPERIENCE AT JAM3</h4>
+                                        <div class="person-slider__inner text-slider">
+                                            <div class="text-slider">
+                                                <div class="text-slider__slide js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">THREE IMPORTANT THINGS I LEARNED AT JAM3:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">
+                                                            <p>Design with intent</p>
+                                                            <p>Responsibility</p>
+                                                            <p>Time management</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY MOST MEMORABLE MOMENT WITH THE JAMFAM:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text"><p>When we did a live broadcast of the Jam3 office for the FWA. We all wore very elaborate
+                                                            costumes, like mascot style costumes.</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">WHAT ARE YOU INTO, THAT NOBODY ELSE IS?</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">Country Music</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY FAVOURITE TYPEFACE:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">
+                                                            Young Serif Regular
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY ADVICE TO FUTURE INTERNS:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">Be confident and don’t be afraid to fuck up.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="person-slider__controls">
+                                            <div class="person-slider__numbers">
+                                                <span class="person-slider__num js-num">
+                                                    <span class="person-slider__num-item">1</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">2</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">3</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">4</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">5</span>
+                                                </span>
+                                                <span class="person-slider__delimiter">OF</span>
+                                                <span class="person-slider__max-num js-max-num">5</span>
+                                            </div>
+                                            <div class="person-slider__buttons">
+                                                <button class="person-slider__button person-slider__button--prev js-prev">
+                                                    <img class="person-slider__svg-arrow person-slider__svg-arrow--prev" src="svg/small-arrow-left.svg" alt="">
+                                                </button>
+                                                <button class="person-slider__button person-slider__button--next js-next">
+                                                    <img class="person-slider__svg-arrow person-slider__svg-arrow--next" src="svg/small-arrow-right.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="scroll-section" id="scroll-section-3">
+                            <!-- heading section -->
+                            <section class="section-heading">
+                                <div class="section-heading__title-wrap">
+                                    <h2 class="section-heading__title">MAKE IT HAPPEN</h2>
+                                    <span class="section-heading__number">03</span>
+                                </div>
+                                <h4 class="section-heading__subtitle">WE OFFER TWO INTERNSHIP TERMS PER YEAR. CHECK THE DATES BELOW TO KNOW WHEN WE’RE ACCEPTING APPLICATIONS:</h4>
+                            </section>
+                            <!-- end heading section -->
+                            <!-- About Apply Section start -->
+                            <div class="apply-section section" id="design-apply-section">
+                                <div class="apply-section__img-container">
+                                    <img class="apply-section__aside-img" src="images/about/about-03.png" alt="">
+                                </div>
+                                <div class="apply-section__title"><span>APPLICATION WINDOWS</span></div>
+                                <div class="apply-section__info">
+                                    <div class="apply-section__info-date">
+                                        <div class="apply-section__info-title">Summer 2017</div>
+                                        <div class="apply-section__info-term">Closed</div>
+                                    </div>
+                                    <div class="apply-section__info-date">
+                                        <div class="apply-section__info-title">Fall 2017</div>
+                                        <div class="apply-section__info-term">Comming June 2017</div>
+                                    </div>
+                                    <div class="apply-section__info-date">
+                                        <div class="apply-section__info-title">Spring 2018</div>
+                                        <div class="apply-section__info-term">FOLLOW US ON FACEBOOK AND TWITTER FOR FUTURE
+                                            UPDATES
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-footer">
+                                <div class="social-footer__inner">
+                                    <a href="/" class="social-footer__logo">utd</a>
+                                    <ul class="social-footer__link-list">
+                                        <li class="social-footer__link-item">
+                                            <a href="">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__link-item">
+                                            <a href="">
+                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__link-item">
+                                            <a href="">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__link-item">
+                                            <a href="">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- About Apply Section end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="switch-button switch-button--designer">
+                <div class="switch-button__icon">
+                    <img src="svg/lightning.svg" alt="">
+                </div>
+                <img class="switch-button__arrow" src="svg/base-arrow-left.svg" alt="">
+                <div class="switch-button__inner">
+                    switch to developer
+                </div>
+            </div>
+            <!-- will be header -->
+        </div>
+        <div class="switch-item switch-item--developer developer">
+            <div class="scroll-bar js-scroll-bar scroll-bar--right" data-scroll-container="#developer-scroll-container">
+                <ul class="scroll-bar__list">
+                    <li class="scroll-bar__item js-scroll-item" data-for="#developer-scroll-section-1">
+                        <span class="scroll-bar__border"></span>
+                        <span class="scroll-bar__section-number">01</span>
+                        <span class="scroll-bar__title">WHAT TO expect</span>
+                    </li>
+                    <li class="scroll-bar__item js-scroll-item" data-for="#developer-scroll-section-2">
+                        <span class="scroll-bar__border"></span>
+                        <span class="scroll-bar__section-number">02</span>
+                        <span class="scroll-bar__title">intern stories</span>
+                    </li>
+                    <li class="scroll-bar__item js-scroll-item" data-for="#developer-scroll-section-3">
+                        <span class="scroll-bar__border"></span>
+                        <span class="scroll-bar__section-number">03</span>
+                        <span class="scroll-bar__title">apply</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="switch-item__outer-container">
+                <div class="switch-item__scroll-container" id="developer-scroll-container">
+                    <div class="switch-item__content">
+                        <div class="scroll-section" id="developer-scroll-section-1">
+                            <section class="our-way-present our-way-step">
+                                <div class="our-way-present__content">
+                                    <h4>CODE LIKE YOU MEAN IT</h4>
+                                    <div class="our-way-present__text">
+                                        <p>We love to make things. Really awesome things. That’s why we created an internship that empowers you to code the impossible into possible.</p>
+                                        <p>We believe in learning by doing. Our aim is to nurture and grow bright young minds from the get-go, because that’s how our industry will thrive.</p>
+                                    </div>
+                                </div>
+                                <div class="our-way-present__image-block">
+                                    <span class="our-way__number">01</span>
+                                    <h2 class="our-way__title">WHAT TO EXPECT</h2>
+                                    <picture class="our-way-present__image-container">
+                                        <source srcset="images/developer_and_designer/meeteng.jpg"
+                                                media="(max-width: 600px)">
+                                        <img src="images/developer_and_designer/meeteng.jpg" alt="MDN">
+                                    </picture>
+                                </div>
+                            </section>
+                            <section class="our-way-present-second">
+                                <div class="our-way-present-second__picture-block">
+                                    <picture>
+                                        <source srcset="images/developer_and_designer/office.jpg" media="(min-width: 600px)">
+                                        <img src="images/developer_and_designer/office.jpg" alt="office">
+                                    </picture>
+                                </div>
+                                <div class="our-way-present-second__text-block special-text-block">
+                                    <h4 class="our-way-present-second__title  special-text-block__title">the role</h4>
+                                    <p>We’re looking for creative coders. At Jam3, our developers, creative technologists, and technical directors are special because they can think both logistically and artistically. We value skill and aptitude, but we honour those who care about working with their team to add the ‘Jam3 sauce’ to every project.</p>
+
+                                    <p>You’ll be part of a dynamic team that’s made up of likeminded, talented people. With them, you’ll work hard to create something that will - without a doubt - stand out in your portfolio. You’ll produce standards based code, surface risk, and ask great questions, while fostering a solid relationship with your teammates.</p>
+
+                                    <p>You are someone who people can count on. Every day, you come in ready to make great things happen.</p>
+                                </div>
+                            </section>
+                            <section class="our-way-present-second our-way-present-second--reverse styled-list">
+                                <div class="our-way-present-second__picture-block">
+                                    <picture>
+                                        <source srcset="images/developer_and_designer/requirementsDesktopDes.jpg" media="(min-width: 600px)">
+                                        <img src="images/developer_and_designer/requirementsDesktopDes.jpg" alt="office">
+                                    </picture>
+                                </div>
+                                <div class="our-way-present-second__text-block special-text-block">
+                                    <h4 class="our-way-present-second__title  special-text-block__title">REQUIRE<wbr>MENTS</h4>
+                                    <p>You own your shit. You’re a self-starter who shows passion and dedication to every task
+                                        given. "Make it happen and give all the fucks", is what we like to say–and the attitude
+                                        we need to see from you. Here is a straightforward breakdown:</p>
+                                    <ul class="our-way-present-second__mobile-hide">
+                                        <li>You play nice with other people.</li>
+                                        <li>You're an actively engaged person. That means you are present, motivated, and
+                                            social.
+                                        </li>
+                                        <li>You excel at photoshop. You can create initial design layouts with confidence and
+                                            know how to effectively communicate concepts to everyone on your team.
+                                        </li>
+                                        <li>You have a solid understanding of visual hierarchy and colour theory.</li>
+                                        <li>You will assist with miscellaneous front-end build production if needed (slicing, layout, etc.).</li>
+                                        <li>You have creative courage. This is a tough industry, only the brave and sturdy
+                                            remain. Be prepared to defend your decisions and take constructive criticism.
+                                        </li>
+                                    </ul>
+                                    <div class="simple-slider our-way-present-second__mobile-slider js-simple-slider">
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You play nice with other people.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You’re an actively engaged person. That means you are present, motivated, and social. You know how to communicate effectively with your teammates.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You love to code. You know how to produce standards based code with the support of many OOP design principles.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You have an eye for detail. Every piece of code you write is clean and purposeful. Your keen observation helps you catch discrepancies and fix them quickly.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                ou are innately curious. Your love for technology is insatiable, so you’re always researching and experimenting. Learning new technical skills while on the job is something you look forward to.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <p class="simple-slider__text">
+                                                You appreciate good design. You want to make something that doesn’t just work flawlessly, but looks amazing.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p>To us, beauty without substance has no value. At Jam3, design thinking and execution are
+                                        equally important, so when we’re examining your portfolio we’ll be on the lookout for
+                                        not only the how but the why.</p>
+                                </div>
+                            </section>
+                            <section class="our-way-present-second">
+                                <div class="our-way-present-second__picture-block">
+                                    <picture>
+                                        <source srcset="images/developer_and_designer/dayInTheLifeDesktopDes.jpg" media="(min-width: 600px)">
+                                        <img src="images/developer_and_designer/dayInTheLifeDesktopDes.jpg" alt="office">
+                                    </picture>
+                                </div>
+                                <div class="our-way-present-second__text-block special-text-block">
+                                    <h4 class="our-way-present-second__title  special-text-block__title">A DAY IN THE LIFE</h4>
+                                    <h6>Here’s a little peek of how your day could play out:</h6>
+                                    <div class="our-way-present-second__schedule our-way-present-second__mobile-hide">
+                                        <ul>
+                                            <li><span class="yellow">9:30</span> - Coffee and talking about last night’s Netflix binge.</li>
+                                            <li><span class="yellow">10:00</span> - Scrum with the team.</li>
+                                            <li><span class="yellow">12:00</span> - Eating lunch with the team. Laughter and debates ensue.</li>
+                                            <li><span class="yellow">2:30</span> - One on one with your mentor. This is your chance to get and give honest feedback.</li>
+                                            <li><span class="yellow">3:30</span> - On Friday’s, we host Beer O’Clock. It’s an opportunity to learn something new from your peers about our industry.</li>
+                                            <li><span class="yellow">6:00</span> - Unless you’re on a crazy deadline, you’re done for the day! Woo hoo! How ‘bout a drink or dinner with your fellow Jamsters?
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="simple-slider our-way-present-second__mobile-slider js-simple-slider">
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">9:30</span>
+                                            <p class="simple-slider__text">
+                                                Coffee and talking about last night’s Netflix binge.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">10:00</span>
+                                            <p class="simple-slider__text">
+                                                Scrum with the team.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">12:00</span>
+                                            <p class="simple-slider__text">
+                                                Eating lunch with the team. Laughter and debates ensue.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">2:30</span>
+                                            <p class="simple-slider__text">
+                                                One on one with your mentor. This is your chance to get and give honest feedback.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">3:30</span>
+                                            <p class="simple-slider__text">
+                                                On Friday’s, we host Beer O’Clock. It’s an opportunity to learn something new from your peers about our industry.
+                                            </p>
+                                        </div>
+                                        <div class="simple-slider__slide">
+                                            <span class="simple-slider__time">6:00</span>
+                                            <p class="simple-slider__text">
+                                                Unless you’re on a crazy deadline, you’re done for the day! Woo hoo! How ‘bout a drink or dinner with your fellow Jamsters?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="scroll-section" id="developer-scroll-section-2">
+                            <section class="section-heading">
+                                <div class="section-heading__title-wrap">
+                                    <h2 class="section-heading__title">INTERN STORIES</h2>
+                                    <span class="section-heading__number">02</span>
+                                </div>
+                                <h4 class="section-heading__subtitle">WE GAVE THESE PEOPLE THE TOOLS AND THEY MADE SOMETHING GREAT. MEET SOME OF WE3’S ALUMNI.</h4>
+                            </section>
+                            <section class="person-story">
+                                <div class="person-story__portrait">
+                                    <img class="person-story__picture" src="images/developer_and_designer/marcoDesktop.jpg" alt="some person">
+                                    <div class="person-story__header">
+                                        <h2 class="person-story__header-title">MARCO</h2>
+                                        <div class="person-story__header-subtitle">
+                                            <p>spring - summer 2016</p>
+                                            <p>seaneca college</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="person-story__story">
+                                    <h4 class="person-story__story-title">FOOD FOR THOUGHT</h4>
+                                    <div class="person-story__story-inner">
+                                        <blockquote class="person-story__quote">
+                                            <div class="person-story__quote-text">NEVER TRUST A COMPUTER YOU CAN'T THROW OUT A WINDOW.
+                                            </div>
+                                            <footer class="person-story__author">STEVE WOZNIAK</footer>
+                                        </blockquote>
+                                        <div class="person-story__story-text">
+                                            <p>It was amazing as a small child to see so many things be accomplished through computers, from useful applications to video games. It has since become my dream to be a great programmer and create something that all sorts of people can use to make their lives better. Be it through utilities, video games, or in the case of the work I’ve done with Jam3, websites that entertain and convey a message. As society becomes more reliant on computers, more of these sorts of applications and experiences will be made, and I want to be there to help build it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="person-slider js-person-slider">
+                                <div class="person-slider__inner">
+                                    <div class="person-slider__images">
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide1.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide2.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide3.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide4.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide5.jpg');"></div>
+                                    </div>
+                                    <div class="person-slider__text-slider">
+                                        <h4 class="person-slider__text-slider-title">MY EXPERIENCE AT JAM3</h4>
+                                        <div class="person-slider__inner text-slider">
+                                            <div class="text-slider">
+                                                <div class="text-slider__slide js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">THREE IMPORTANT THINGS I LEARNED AT JAM3:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">
+                                                            <p>How to create user journeys and properly map out a user experience flow</p>
+                                                            <p>How to present an idea or piece of design efficiently and persuasively</p>
+                                                            <p>How to manifest my design inspirations into my own work</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY MOST MEMORABLE MOMENT WITH THE JAMFAM:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text"><p>My beer o’clock presentation at the end of my internship. It was a very rewarding
+                                                            experience to
+                                                            show the final product!</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">WHAT ARE YOU INTO, THAT NOBODY ELSE IS?</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">Unconventional editorial design.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY FAVOURITE TYPEFACE:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">
+                                                            Inkwell Sans from MXB
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY ADVICE TO FUTURE INTERNS:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">Trust your instincts and accept criticism with an open mind.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="person-slider__controls">
+                                            <div class="person-slider__numbers">
+                                                <span class="person-slider__num js-num">
+                                                    <span class="person-slider__num-item">1</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">2</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">3</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">4</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">5</span>
+                                                </span>
+                                                <span class="person-slider__delimiter">OF</span>
+                                                <span class="person-slider__max-num js-max-num">5</span>
+                                            </div>
+                                            <div class="person-slider__buttons">
+                                                <button class="person-slider__button person-slider__button--prev js-prev">
+                                                    <img class="person-slider__svg-arrow person-slider__svg-arrow--prev" src="svg/small-arrow-left.svg" alt="">
+                                                </button>
+                                                <button class="person-slider__button person-slider__button--next js-next">
+                                                    <img class="person-slider__svg-arrow person-slider__svg-arrow--next" src="svg/small-arrow-right.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="person-story">
+                                <div class="person-story__portrait">
+                                    <img class="person-story__picture" src="images/developer_and_designer/erikDesktop.jpg" alt="some person">
+                                    <div class="person-story__header">
+                                        <h2 class="person-story__header-title">ERIK</h2>
+                                        <div class="person-story__header-subtitle">
+                                            <p>summer 2016</p>
+                                            <p>seaneca COLLEGE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="person-story__story">
+                                    <h4 class="person-story__story-title">FOOD FOR THOUGHT</h4>
+                                    <div class="person-story__story-inner">
+                                        <blockquote class="person-story__quote">
+                                            <div class="person-story__quote-text">YOU MAY DELAY, BUT TIME WILL NOT.
+                                            </div>
+                                            <footer class="person-story__author">BENJAMIN FRANKLIN</footer>
+                                        </blockquote>
+                                        <div class="person-story__story-text">
+                                            <p>I’ve been really into building stuff since my childhood: when I was a kid I had a lot of constructor kits and I used to build car models, buildings, and even imaginary stuff from my head. When I got older, like most teenagers I tried to dramatically change my path and I found myself in graffiti and beatmaking. This gave me an understanding of my artistic side, and it broadened my view from only seeing the functionality of things to their aesthetic as well. These two periods in my life basically shaped my future path to become a creative developer, which requires to have skills from both functionality and design perspectives.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="person-slider js-person-slider">
+                                <div class="person-slider__inner">
+                                    <div class="person-slider__images">
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide21.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide22.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide23.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide24.jpg');"></div>
+                                        <div class="person-slider__image js-image-slide" style="background-image: url('images/developer_and_designer/slide25.jpg');"></div>
+                                    </div>
+                                    <div class="person-slider__text-slider">
+                                        <h4 class="person-slider__text-slider-title">MY EXPERIENCE AT JAM3</h4>
+                                        <div class="person-slider__inner text-slider">
+                                            <div class="text-slider">
+                                                <div class="text-slider__slide js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">THREE IMPORTANT THINGS I LEARNED AT JAM3:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">
+                                                            <p>Design with intent</p>
+                                                            <p>Responsibility</p>
+                                                            <p>Time management</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY MOST MEMORABLE MOMENT WITH THE JAMFAM:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text"><p>When we did a live broadcast of the Jam3 office for the FWA. We all wore very elaborate
+                                                            costumes, like mascot style costumes.</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">WHAT ARE YOU INTO, THAT NOBODY ELSE IS?</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">Country Music</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY FAVOURITE TYPEFACE:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">
+                                                            Young Serif Regular
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-slider__slide text-slider__slide--pre-slided js-text-slide">
+                                                    <div class="text-slider__line--q text-slider__line">
+                                                        <span class="text-slider__pre-text">Q:</span>
+                                                        <div class="text-slider__text">MY ADVICE TO FUTURE INTERNS:</div>
+                                                    </div>
+                                                    <div class="text-slider__line--a text-slider__line">
+                                                        <span class="text-slider__pre-text">A:</span>
+                                                        <div class="text-slider__text">Be confident and don’t be afraid to fuck up.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="person-slider__controls">
+                                            <div class="person-slider__numbers">
+                                                <span class="person-slider__num js-num">
+                                                    <span class="person-slider__num-item">1</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">2</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">3</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">4</span>
+                                                    <span class="person-slider__num-item person-slider__num-item--pre-slided">5</span>
+                                                </span>
+                                                <span class="person-slider__delimiter">OF</span>
+                                                <span class="person-slider__max-num js-max-num">5</span>
+                                            </div>
+                                            <div class="person-slider__buttons">
+                                                <button class="person-slider__button person-slider__button--prev js-prev">
+                                                    <img class="person-slider__svg-arrow person-slider__svg-arrow--prev" src="svg/small-arrow-left.svg" alt="">
+                                                </button>
+                                                <button class="person-slider__button person-slider__button--next js-next">
+                                                    <img class="person-slider__svg-arrow person-slider__svg-arrow--next" src="svg/small-arrow-right.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="scroll-section" id="developer-scroll-section-3">
+                            <!-- heading section -->
+                            <section class="section-heading">
+                                <div class="section-heading__title-wrap">
+                                    <h2 class="section-heading__title">MAKE IT HAPPEN</h2>
+                                    <span class="section-heading__number">03</span>
+                                </div>
+                                <h4 class="section-heading__subtitle">WE OFFER TWO INTERNSHIP TERMS PER YEAR. CHECK THE DATES BELOW TO KNOW WHEN WE’RE ACCEPTING APPLICATIONS:</h4>
+                            </section>
+                            <!-- end heading section -->
+                            <!-- About Apply Section start -->
+                            <section class="apply-section section" id="developer-apply-section">
+                                <div class="apply-section__img-container">
+                                    <img class="apply-section__aside-img" src="images/about/about-03.png" alt="">
+                                </div>
+                                <div class="apply-section__title"><span>APPLICATION WINDOWS</span></div>
+                                <div class="apply-section__info">
+                                    <div class="apply-section__info-date">
+                                        <div class="apply-section__info-title">Summer 2017</div>
+                                        <div class="apply-section__info-term">Closed</div>
+                                    </div>
+                                    <div class="apply-section__info-date">
+                                        <div class="apply-section__info-title">Fall 2017</div>
+                                        <div class="apply-section__info-term">Comming June 2017</div>
+                                    </div>
+                                    <div class="apply-section__info-date">
+                                        <div class="apply-section__info-title">Spring 2018</div>
+                                        <div class="apply-section__info-term">FOLLOW US ON FACEBOOK AND TWITTER FOR FUTURE
+                                            UPDATES
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="social-footer">
+                                <div class="social-footer__inner">
+                                    <a href="/" class="social-footer__logo">utd</a>
+                                    <ul class="social-footer__link-list">
+                                        <li class="social-footer__link-item">
+                                            <a href="">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__link-item">
+                                            <a href="">
+                                                <i class="fa fa-github" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__link-item">
+                                            <a href="">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social-footer__link-item">
+                                            <a href="">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- About Apply Section end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="switch-button switch-button--developer">
+                <div class="switch-button__icon">
+                    <img src="svg/pen.svg" alt="">
+                </div>
+                <img class="switch-button__arrow" src="svg/base-arrow-right.svg" alt="">
+                <div class="switch-button__inner">
+                    switch to designer
+                </div>
+            </div>
+            <!-- will be header -->
+        </div>
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer="defer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer="defer"></script>
+<script src="js/min/app.js" defer="defer"></script>
+</body>
+</html>

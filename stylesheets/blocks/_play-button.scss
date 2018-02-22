@@ -1,0 +1,31 @@
+.play-button {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacify 300ms;
+
+
+    &:hover {
+        &::before {
+            transform: rotateZ(-45deg);
+        }
+    }
+
+    .fa {
+        color: #fff;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 4px solid #fff;
+        transform: rotateZ(0deg);
+        transition: transform 300ms;
+    }
+}

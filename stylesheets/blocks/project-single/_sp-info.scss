@@ -1,0 +1,50 @@
+.sp-info__button-row {
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);;
+    font-family: $uni;
+    font-weight: normal;
+    letter-spacing: 1px;
+
+    @include breakpoint(medium) {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}
+
+@include breakpoint(no-mobile) {
+    .sp-info__item {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 500ms, transform 500ms;
+
+        .animate & {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @for $i from 1 through 20 {
+        .sp-info__item:nth-child(#{$i}) {
+            transition-delay: $i * 150ms + 100ms;
+        }
+    }
+
+    .sp-awards__item {
+        opacity: 0;
+        transform: translateX(150px);
+        transition: opacity 550ms, transform 550ms;
+
+        .animate & {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @for $i from 1 through 20 {
+        .sp-awards__item:nth-child(#{$i}) {
+            transition-delay: $i * 200ms + 500ms;
+        }
+    }
+}

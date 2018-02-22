@@ -1,0 +1,98 @@
+.scroll-btn {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 40px;
+    margin-top: -75px;
+    margin-left: -20px;
+    color: rgba(#fff, 0.75);
+    cursor: pointer;
+    transition: color 200ms linear, transform 200ms linear 400ms;
+    transform: translateY(-55px);
+
+    &:hover {
+        color: rgba(#fff, 1);
+
+        .scroll-btn__arrow--up {
+            top: 10px;
+        }
+
+        .scroll-btn__arrow--down {
+            bottom: 10px;
+        }
+    }
+
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+.scroll-btn__small {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: $dark-bg;
+    line-height: 40px;
+    text-align: center;
+}
+
+.scroll-btn__big {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background-color: $dark-bg;
+}
+
+.scroll-btn__arrow {
+    position: absolute;
+    left: 11.5px;
+}
+
+.scroll-btn__arrow--up {
+    top: 20px;
+    opacity: 0;
+    transition: top 200ms linear, opacity 400ms;
+}
+
+.scroll-btn__arrow--down {
+    bottom: 20px;
+    opacity: 1;
+    transition: bottom 200ms linear, opacity 400ms;
+}
+
+.scroll-btn__small--top {
+    transform: translateY(50px);
+    transition: transform 200ms linear 0ms;
+}
+
+.scroll-btn__small--bottom {
+    transition: transform 200ms linear 1200ms;
+    transform: translateY(0);
+}
+
+.scroll-btn--scrolled {
+    &.scroll-btn {
+        transform: translateY(55px);
+    }
+
+    .scroll-btn__small--top {
+        transform: translateY(0);
+        transition: transform 200ms linear 1200ms;
+    }
+    .scroll-btn__small--bottom {
+        transform: translateY(-50px);
+        transition: transform 200ms linear 0ms;
+    }
+
+    .scroll-btn__arrow--up {
+        opacity: 1;
+    }
+
+    .scroll-btn__arrow--down {
+        opacity: 0;
+    }
+}

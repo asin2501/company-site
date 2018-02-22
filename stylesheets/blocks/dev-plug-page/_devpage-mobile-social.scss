@@ -1,0 +1,37 @@
+.devpage-mobile-social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    background-color: $black;
+    color: #fff;
+    transform: translateY(-200%);
+    transition: transform 300ms linear;
+    transition-delay: 0s;
+
+    .devpage-mobile-socia__item {
+        display: block;
+        color: $icons-gray;
+    }
+
+    @include breakpoint(extra-small) {
+        padding-top: 18px;
+        padding-right: 35px;
+        padding-bottom: 18px;
+        padding-left: 35px;
+
+        .devpage-mobile-social__link > .fa {
+            font-size: 28px;
+        }
+    }
+}
+
+.devpage-mobile-header--opened {
+    .devpage-mobile-social {
+        transform: translateY(0);
+        transition-delay: 200ms;
+    }
+}

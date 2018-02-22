@@ -1,0 +1,71 @@
+.about-header {
+    position: relative;
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+.about-header__close {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    display: flex;
+    background-color: transparent;
+    font-family: $bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $base-color;
+    cursor: pointer;
+
+    &:hover {
+        .cross__x, .cross__y {
+            background-color: rgba(#fff, 0.85);
+        }
+
+        .cross__x {
+            transform: translateZ(0) rotate(-45deg);
+        }
+
+        .cross__y {
+            transform: translateZ(0) rotate(-135deg);
+        }
+    }
+
+    .switch--left &:hover {
+        .cross__x, .cross__y {
+            background-color: rgba(#000, 0.85);
+        }
+    }
+}
+
+.about-header__close-text {
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: color 200ms;
+
+    .about-header__close:hover & {
+        color: rgba(#fff, 0.85);
+
+        .switch--left & {
+            color: rgba(#000, 0.85);
+        }
+    }
+}
+
+.about-header_logo {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    svg {
+        max-width: 100%;
+        width: 100px;
+        height: auto;
+
+        * {
+            fill: $base-color;
+        }
+    }
+}

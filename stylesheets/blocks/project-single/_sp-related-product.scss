@@ -1,0 +1,32 @@
+.sp-related-product {
+    overflow: hidden;
+}
+
+.sp-related-product__item {
+    margin-bottom: 30px;
+}
+
+@include breakpoint(no-mobile) {
+    .sp-related-product__item {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 600ms, transform 600ms;
+
+        .animate & {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @for $i from 1 through 20 {
+        .sp-related-product__item:nth-child(#{$i}) {
+            transition-delay: $i * 150ms + 200ms;
+        }
+    }
+}
+
+@include breakpoint(extra-small) {
+    .sp-related-product__item {
+        margin-bottom: 15px;
+    }
+}
